@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujjain Darshan | Live Map & Famous Places</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .map-section {
+            flex: 2;
+            padding: 20px;
+        }
+        .places-list {
+            flex: 1;
+            padding: 20px;
+            background-color: #e9ecef;
+            border-left: 1px solid #ccc;
+        }
+        #map-frame {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 15px;
+            cursor: pointer;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        li:hover {
+            background-color: #d1e7ff;
+        }
+        .place-name {
+            font-weight: bold;
+            color: #007bff;
+        }
+        .place-info {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ujjain Darshan 🚩 | Explorer Map</h1>
+        <p>Famous Jagahon ko dekhein aur unki information prapt karein</p>
+    </header>
+
+    <div class="container">
+        <div class="map-section">
+            <h2>🌍Ujjain (Google Maps)</h2>
+            <iframe
+                id="map-frame"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117562.91185590924!2d75.7275752150373!3d23.178822558661716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4e13.1!3m3!1m2!1s0x39637c768926d215%3A0x1161d2d02a5c2069!2sUjjain%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1700121600000!5m2!1sen!2sin"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <div class="places-list">
+            <h2>📍 Famous Jagah</h2>
+            <p>Jagah par click karein to search for directions/info.</p>
+            <ul>
+                <li onclick="searchPlace('Mahakaleshwar Jyotirlinga Ujjain')">
+                    <div class="place-name">Mahakaleshwar Jyotirlinga</div>
+                    <div class="place-info">Shiv ji ka ek pramukh Jyotirlinga Mandir.</div>
+                </li>
+                <li onclick="searchPlace('Kaal Bhairav Temple Ujjain')">
+                    <div class="place-name">Kaal Bhairav Temple</div>
+                    <div class="place-info">Bhairav Baba ka prasiddh Mandir.</div>
+                </li>
+                <li onclick="searchPlace('Ram Ghat Ujjain')">
+                    <div class="place-name">Ram Ghat</div>
+                    <div class="place-info">Shipra Nadi ka pavitra ghat.</div>
+                </li>
+                <li onclick="searchPlace('Mangalnath Temple Ujjain')">
+                    <div class="place-name">Mangalnath Temple</div>
+                    <div class="place-info">Mangal Grah ki janmabhoomi.</div>
+                </li>
+                <li onclick="searchPlace('Harsiddhi Temple Ujjain')">
+                    <div class="place-name">Harsiddhi Temple</div>
+                    <div class="place-info">Ek shakti peeth.</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript function to search for the place on Google
+        function searchPlace(placeName) {
+            // New tab mein Google Maps par search kholna
+            const searchUrl = `https://www.google.com/maps/search/${encodeURIComponent(placeName)}`;
+            window.open(searchUrl, '_blank');
+
+            // Agar aap chahate hain ki user directions search karein, toh yeh use kar sakte hain:
+            // const directionsUrl = `https://www.google.com/maps/dir/Current+Location/${encodeURIComponent(placeName)}`;
+            // window.open(directionsUrl, '_blank');
+
+            alert(`Searching for: ${placeName} (Aapko naye tab mein directions aur information milegi)`);
+        }
+    </script>
+
+</body>
+</html>
+
+
+<footer>
+  <p>&copy; 2025 Explore Ujjain. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Explore Madhya Pradesh
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-50 flex flex-col items-center min-h-screen px-4 py-6">
+  <header class="max-w-5xl w-full bg-white shadow-lg rounded-lg p-8 mb-6 text-center">
+     <div class="mt-4 md:mt-0 flex flex-wrap justify-center gap-6 text-gray-700 font-semibold text-lg">
+     <a class="hover:text-green-700 transition" href="home">
+      Home
+     </a>
+     <a class="hover:text-green-700 transition" href="about">
+      about
+     </a>
+     <a class="hover:text-green-700 transition" href="locations">
+      locations
+     </a>
+     <a class="hover:text-green-700 transition" href="contact">
+      Contact
+     </a>
+     <a class="hover:text-green-700 transition" href="login">
+      Login
+     </a>
+    </div>
+   <h1 class="text-4xl sm:text-5xl font-extrabold mb-3 text-gray-900">
+    Explore Madhya Pradesh
+   </h1>
+   
+   <p class="text-lg sm:text-xl text-gray-700">
+    Discover the heart of India with its rich heritage, vibrant culture, and breathtaking landscapes.
+   </p>
+  </header>
+  <!-- Image Slider -->
+  <div class="max-w-5xl w-full relative rounded-xl shadow-lg overflow-hidden mb-10">
+   <div class="flex transition-transform duration-700 ease-in-out" id="slides">
+    <img alt="Boat on rocky beach at sunset with calm sea and colorful sky, Thailand" class="w-full h-[500px] object-cover flex-shrink-0" height="500" src="https://storage.googleapis.com/a1aa/image/a8215e76-9356-44df-5191-ac1f38b8f583.jpg" width="1000"/>
+    <img alt="Bhopal cityscape with lake and buildings under clear blue sky" class="w-full h-[500px] object-cover flex-shrink-0" height="500" src="https://storage.googleapis.com/a1aa/image/3de0ebcb-1617-4bd4-8dc2-26ef87063781.jpg" width="1000"/>
+    <img alt="Gwalior Fort on hill with blue sky and greenery around" class="w-full h-[500px] object-cover flex-shrink-0" height="500" src="https://storage.googleapis.com/a1aa/image/b2da9c49-fbca-4257-9ba9-da77ed3e4567.jpg" width="1000"/>
+   </div>
+   <!-- Slider Buttons -->
+   <button aria-label="Previous Slide" class="absolute top-1/2 left-4 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-90 text-gray-800 rounded-full p-3 shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500" id="prevBtn">
+    <i class="fas fa-chevron-left text-xl">
+    </i>
+   </button>
+   <button aria-label="Next Slide" class="absolute top-1/2 right-4 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-90 text-gray-800 rounded-full p-3 shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500" id="nextBtn">
+    <i class="fas fa-chevron-right text-xl">
+    </i>
+   </button>
+  </div>
+  <!-- Search Bar -->
+  <form class="max-w-xl w-full flex flex-col sm:flex-row items-center justify-center mb-10 gap-4" id="searchForm">
+   <input aria-label="Search your destination" class="w-full sm:w-3/4 px-4 py-3 border-2 border-blue-600 rounded-lg text-lg focus:outline-none focus:ring-2 focus:ring-blue-500" id="searchInput" placeholder="Search your destination..." required="" type="text"/>
+   <button class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500" type="submit">
+    Search
+   </button>
+  </form>
+  <!-- Navigation Cards -->
+  <nav class="max-w-5xl w-full bg-white rounded-lg shadow-lg p-6">
+   <div class="flex flex-wrap justify-center gap-6">
+    <a class="group w-[300px] h-[200px] bg-gradient-to-r from-[#f9fbfc] to-[#80c2d1] text-[#013b32] rounded-lg shadow-md flex flex-col justify-between items-center p-4 font-bold text-xl transition-transform duration-300 hover:scale-110 hover:bg-[#a77739] hover:text-white" href="Ujjain">
+     Ujjain
+     <img alt="Ancient temple with intricate carvings and architecture in Ujjain" class="rounded-lg w-full h-[150px] object-cover" height="150" src="https://storage.googleapis.com/a1aa/image/6f9f3d51-cbd3-439a-68b8-8e99d10c616c.jpg" width="300"/>
+    </a>
+    <a class="group w-[300px] h-[200px] bg-gradient-to-r from-[#f9fbfc] to-[#80c2d1] text-[#013b32] rounded-lg shadow-md flex flex-col justify-between items-center p-4 font-bold text-xl transition-transform duration-300 hover:scale-110 hover:bg-[#a77739] hover:text-white" href="Indore">
+     Indore
+     <img alt="Modern cityscape with buildings and streets in Indore" class="rounded-lg w-full h-[150px] object-cover" height="150" src="https://storage.googleapis.com/a1aa/image/e7388bbb-c161-48dd-d45e-665134379426.jpg" width="300"/>
+    </a>
+    <a class="group w-[300px] h-[200px] bg-gradient-to-r from-[#f9fbfc] to-[#80c2d1] text-[#013b32] rounded-lg shadow-md flex flex-col justify-between items-center p-4 font-bold text-xl transition-transform duration-300 hover:scale-110 hover:bg-[#a77739] hover:text-white" href="Bhopal">
+     Bhopal
+     <img alt="Scenic lake with city view and greenery in Bhopal" class="rounded-lg w-full h-[150px] object-cover" height="150" src="https://storage.googleapis.com/a1aa/image/919640a9-a03c-4e20-dd6f-f8c9ffebd7c2.jpg" width="300"/>
+    </a>
+    <a class="group w-[300px] h-[200px] bg-gradient-to-r from-[#f9fbfc] to-[#80c2d1] text-[#013b32] rounded-lg shadow-md flex flex-col justify-between items-center p-4 font-bold text-xl transition-transform duration-300 hover:scale-110 hover:bg-[#a77739] hover:text-white" href="Pachmarhi">
+     Pachmarhi
+     <img alt="Waterfalls surrounded by dense forests in Pachmarhi" class="rounded-lg w-full h-[150px] object-cover" height="150" src="https://storage.googleapis.com/a1aa/image/7953c960-562c-4104-5116-434e3821e35b.jpg" width="300"/>
+    </a>
+    <a class="group w-[300px] h-[200px] bg-gradient-to-r from-[#f9fbfc] to-[#80c2d1] text-[#013b32] rounded-lg shadow-md flex flex-col justify-between items-center p-4 font-bold text-xl transition-transform duration-300 hover:scale-110 hover:bg-[#a77739] hover:text-white" href="Jabalpur">
+     Jabalpur
+     <img alt="Marble rocks and flowing river in Jabalpur surrounded by cliffs" class="rounded-lg w-full h-[150px] object-cover" height="150" src="https://storage.googleapis.com/a1aa/image/ace358b0-c7ab-493c-5712-8dab1270327e.jpg" width="300"/>
+    </a>
+    <a class="group w-[300px] h-[200px] bg-gradient-to-r from-[#f9fbfc] to-[#80c2d1] text-[#013b32] rounded-lg shadow-md flex flex-col justify-between items-center p-4 font-bold text-xl transition-transform duration-300 hover:scale-110 hover:bg-[#a77739] hover:text-white" href="Vidisha">
+     Vidisha
+     <img alt="Ancient Buddhist monuments and ruins in Vidisha with greenery" class="rounded-lg w-full h-[150px] object-cover" height="150" src="https://storage.googleapis.com/a1aa/image/ba6bbe0e-b068-4507-fd67-220b6c4a2835.jpg" width="300"/>
+    </a>
+    <a class="group w-[300px] h-[200px] bg-gradient-to-r from-[#f9fbfc] to-[#80c2d1] text-[#013b32] rounded-lg shadow-md flex flex-col justify-between items-center p-4 font-bold text-xl transition-transform duration-300 hover:scale-110 hover:bg-[#a77739] hover:text-white" href="Khajuraho">
+     Khajuraho
+     <img alt="Khajuraho temples with intricate stone sculptures and carvings" class="rounded-lg w-full h-[150px] object-cover" height="150" src="https://storage.googleapis.com/a1aa/image/769e6d9a-a3db-49f5-0400-12147be590ae.jpg" width="300"/>
+    </a>
+    <a class="group w-[300px] h-[200px] bg-gradient-to-r from-[#f9fbfc] to-[#80c2d1] text-[#013b32] rounded-lg shadow-md flex flex-col justify-between items-center p-4 font-bold text-xl transition-transform duration-300 hover:scale-110 hover:bg-[#a77739] hover:text-white" href="Kuno">
+     Kuno
+     <img alt="Dense forest and wildlife sanctuary landscape in Kuno with animals" class="rounded-lg w-full h-[150px] object-cover" height="150" src="https://storage.googleapis.com/a1aa/image/2fb4eb5b-f171-44dc-6d43-ac2901a6deea.jpg" width="300"/>
+    </a>
+    <a class="group w-[300px] h-[200px] bg-gradient-to-r from-[#f9fbfc] to-[#80c2d1] text-[#013b32] rounded-lg shadow-md flex flex-col justify-between items-center p-4 font-bold text-xl transition-transform duration-300 hover:scale-110 hover:bg-[#a77739] hover:text-white" href="Rewa">
+     Rewa
+     <img alt="Beautiful waterfalls and natural scenery in Rewa region" class="rounded-lg w-full h-[150px] object-cover" height="150" src="https://storage.googleapis.com/a1aa/image/7e200df9-326b-4dd5-a944-352f463d5614.jpg" width="300"/>
+    </a>
+    <a class="group w-[300px] h-[200px] bg-gradient-to-r from-[#f9fbfc] to-[#80c2d1] text-[#013b32] rounded-lg shadow-md flex flex-col justify-between items-center p-4 font-bold text-xl transition-transform duration-300 hover:scale-110 hover:bg-[#a77739] hover:text-white" href="Shahdol">
+     Shahdol
+     <img alt="Hilly landscape with forests and greenery in Shahdol" class="rounded-lg w-full h-[150px] object-cover" height="150" src="https://storage.googleapis.com/a1aa/image/4d08e3f2-e3c2-4040-bc67-45eb5a55d0c9.jpg" width="300"/>
+    </a>
+    <a class="group w-[300px] h-[200px] bg-gradient-to-r from-[#f9fbfc] to-[#80c2d1] text-[#013b32] rounded-lg shadow-md flex flex-col justify-between items-center p-4 font-bold text-xl transition-transform duration-300 hover:scale-110 hover:bg-[#a77739] hover:text-white" href="Mandsaur">
+     Mandsaur
+     <img alt="Historic temple and sites with traditional architecture in Mandsaur" class="rounded-lg w-full h-[150px] object-cover" height="150" src="https://storage.googleapis.com/a1aa/image/1a8645ac-b1a3-4890-208c-4ad550ec50f7.jpg" width="300"/>
+    </a>
+    <a class="group w-[300px] h-[200px] bg-gradient-to-r from-[#f9fbfc] to-[#80c2d1] text-[#013b32] rounded-lg shadow-md flex flex-col justify-between items-center p-4 font-bold text-xl transition-transform duration-300 hover:scale-110 hover:bg-[#a77739] hover:text-white" href="Gwalior">
+     Gwalior
+     <img alt="Gwalior Fort on hill with blue sky and greenery around" class="rounded-lg w-full h-[150px] object-cover" height="150" src="https://storage.googleapis.com/a1aa/image/b2da9c49-fbca-4257-9ba9-da77ed3e4567.jpg" width="300"/>
+    </a>
+   </div>
+  </nav>
+  <footer class="mt-12 w-full max-w-5xl bg-blue-600 text-white text-center py-5 rounded-lg shadow-inner">
+   © 2025 TravelNest. All rights reserved.
+  </footer>
+  <script>
+   const slides = document.getElementById('slides');
+    const totalSlides = slides.children.length;
+    let currentIndex = 0;
+    let slideWidth = slides.children[0].clientWidth;
+
+    function updateSlidePosition() {
+      slides.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+
+    window.addEventListener('resize', () => {
+      slideWidth = slides.children[0].clientWidth;
+      updateSlidePosition();
+    });
+
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      updateSlidePosition();
+      resetAutoSlide();
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateSlidePosition();
+      resetAutoSlide();
+    });
+
+    let autoSlideInterval = setInterval(() => {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateSlidePosition();
+    }, 5000);
+
+    function resetAutoSlide() {
+      clearInterval(autoSlideInterval);
+      autoSlideInterval = setInterval(() => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSlidePosition();
+      }, 5000);
+    }
+
+    // Search functionality
+    const searchForm = document.getElementById('searchForm');
+    const searchInput = document.getElementById('searchInput');
+    const navLinks = document.querySelectorAll('nav a');
+
+    searchForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const query = searchInput.value.trim().toLowerCase();
+      if (!query) {
+        navLinks.forEach(link => link.classList.remove('hidden'));
+        return;
+      }
+      navLinks.forEach(link => {
+        const text = link.textContent.toLowerCase();
+        if (text.includes(query)) {
+          link.classList.remove('hidden');
+        } else {
+          link.classList.add('hidden');
+        }
+      });
+    });
+  </script>
+ </body>
+</html>

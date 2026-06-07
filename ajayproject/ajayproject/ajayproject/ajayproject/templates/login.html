@@ -1,0 +1,75 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Travel Login Page
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Poppins', sans-serif;
+      background: url('https://wallpaperaccess.com/full/1534566.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    div a{
+      color: rgb(20, 18, 18);
+      margin-left: 10px;
+      gap: 0%;
+    }
+  </style>
+ </head>
+ <body class="min-h-screen flex items-center justify-center bg-gray-900 bg-opacity-70">
+  <div class="bg-white bg-opacity-90 rounded-3xl shadow-2xl max-w-md w-full mx-4 p-10 sm:p-12">
+   <header class="flex flex-col items-center mb-8">
+    <img alt="Travel logo with a stylized mountain and sun in warm colors" class="w-24 h-24 rounded-full mb-4 shadow-lg" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/f3062c8c-5bad-4b57-cb7f-dbbacaad885c.jpg" width="100"/>
+    <h1 class="text-3xl font-extrabold text-green-700 tracking-wide">
+     Travel Login Page
+     <div class="mt-4 md:mt-0 flex flex-wrap justify-center gap-6 text-gray-700 font-semibold text-lg">
+     <a class="hover:text-green-700 transition" href="home">
+      back
+     </a>
+     </div>
+    </h1>
+   </header>
+   <form action="login" class="space-y-6" method="post">
+    {%csrf_token%}
+    <div>
+     <label class="block text-gray-700 font-semibold mb-2" for="fullname">
+      Full Name
+     </label>
+     <input class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition" id="fullname" name="fullname" placeholder="Enter your full name" required="" type="text"/>
+    </div>
+    <!-- <div>
+     <label class="block text-gray-700 font-semibold mb-2" for="email">
+      Username
+     </label>
+     <input class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition" id="email" name="username" placeholder="Enter your username" required="" type="text"/>
+    </div> -->
+    <div>
+     <label class="block text-gray-700 font-semibold mb-2" for="password">
+      Password
+     </label>
+     <input class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition" id="password" name="password" placeholder="Enter your password" required="" type="password"/>
+    </div>
+    <button class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-lg shadow-md transition-colors duration-300" type="submit">
+     <i class="fas fa-sign-in-alt mr-2">
+     </i>
+     Login
+    </button>
+   </form>
+   <nav class="mt-6 text-center">
+    <p class="text-gray-700">
+     Don't have an account?
+     <a class="text-green-600 font-semibold hover:underline focus:outline-none focus:ring-2 focus:ring-green-500 rounded" href="registration">
+      Register
+    </div>
+     </a>
+    </p>
+   </nav>
+  </div>
+ </body>
+</html>

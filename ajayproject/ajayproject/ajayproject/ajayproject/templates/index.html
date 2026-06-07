@@ -1,0 +1,310 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Explore Madhya Pradesh - Heart of Incredible India
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7fafc;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.45);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            font-size: 30px;
+        }
+
+        #Fix{
+            position: fixed;
+            top: 0;
+        }
+    
+  </style>
+ </head>
+ <body class="antialiased bg-gray-50">
+  <!-- Header -->
+  <header class="bg-white shadow-md fixed w-full z-30" id="Fix">
+   <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center p-4 md:p-6">
+    <a class="text-3xl font-extrabold text-green-700 hover:text-green-900 transition duration-300 rounded-lg px-2 py-1 select-none" href="#">
+     Explore Madhya Pradesh
+    </a>
+    <div class="mt-4 md:mt-0 flex flex-wrap justify-center gap-6 text-gray-700 font-semibold text-lg">
+     <a class="hover:text-green-700 transition" href="home">
+      Home
+     </a>
+     <a class="hover:text-green-700 transition" href="about">
+      about
+     </a>
+     <a class="hover:text-green-700 transition" href="locations">
+      locations
+     </a>
+     <a class="hover:text-green-700 transition" href="contact">
+      Contact
+     </a>
+     <a class="hover:text-green-700 transition" href="login">
+      Login
+     </a>
+     <a class="hover:text-green-700 transition" href="hotel">
+      hotel
+     </a>
+    </div>
+   </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="relative h-screen w-full overflow-hidden rounded-b-3xl shadow-lg mt-[72px] md:mt-[96px]">
+   <img alt="Scenic landscape of Madhya Pradesh showing lush green forests, winding rivers, and hills under a bright blue sky" class="absolute inset-0 w-full h-full object-cover" height="1080" loading="eager" src="https://storage.googleapis.com/a1aa/image/f813e2ca-397f-4ab1-69a7-0eb836d4f912.jpg" width="1920"/>
+   <div class="hero-overlay px-6 md:px-12">
+    <h1 class="text-5xl md:text-7xl font-extrabold text-white drop-shadow-lg mb-6 leading-tight max-w-4xl">
+     Discover the Heart of Incredible India
+    </h1>
+    <p class="text-lg md:text-2xl text-green-200 max-w-3xl mb-10 drop-shadow-md">
+     Explore the rich heritage, vibrant culture, and breathtaking landscapes of Madhya Pradesh.
+    </p>
+    <a class="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-semibold rounded-full px-8 py-4 text-lg shadow-lg transition duration-300" href="#destinations">
+     <i class="fas fa-map-marker-alt mr-3 text-xl">
+     </i>
+     Explore Destinations
+    </a>
+   </div>
+  </section>
+  <!-- Travel Logos Section -->
+  <section class="container mx-auto my-16 px-6 md:px-0">
+   <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
+    Trusted By Travelers Worldwide
+   </h2>
+   <div class="flex flex-wrap justify-center items-center gap-12">
+    <a class="group w-[300px] h-[200px] bg-gradient-to-r from-[#f9fbfc] to-[#80c2d1] text-[#013b32] rounded-lg shadow-md flex flex-col justify-between items-center p-4 font-bold text-xl transition-transform duration-300 hover:scale-110 hover:bg-[#a77739] hover:text-white" href="traveler">
+    <img alt="TripAdvisor logo in green and white with owl icon" class="h-20 object-contain" height="80" src="https://storage.googleapis.com/a1aa/image/b2be12e2-bddb-48a5-2333-ec651de00dbc.jpg" width="150"/>
+    </a>
+    <a class="group w-[300px] h-[200px] bg-gradient-to-r from-[#f9fbfc] to-[#80c2d1] text-[#013b32] rounded-lg shadow-md flex flex-col justify-between items-center p-4 font-bold text-xl transition-transform duration-300 hover:scale-110 hover:bg-[#a77739] hover:text-white" href="traveler">
+    <img alt="Lonely Planet logo with blue globe icon and text" class="h-20 object-contain" height="80" src="https://storage.googleapis.com/a1aa/image/e028872c-9d98-48c7-c985-5c300d182f72.jpg" width="150"/>
+    </a>
+    <a class="group w-[300px] h-[200px] bg-gradient-to-r from-[#f9fbfc] to-[#80c2d1] text-[#013b32] rounded-lg shadow-md flex flex-col justify-between items-center p-4 font-bold text-xl transition-transform duration-300 hover:scale-110 hover:bg-[#a77739] hover:text-white" href="traveler">
+    <img alt="MakeMyTrip logo with orange and blue colors and airplane icon" class="h-20 object-contain" height="80" src="https://storage.googleapis.com/a1aa/image/819a5ecc-a546-437c-f3b2-ea31b14cacb2.jpg" width="150"/>
+    </a>
+   </div>
+  </section>
+  <!-- Popular Destinations Section -->
+  <section class="container mx-auto my-16 px-6 md:px-0" id="destinations">
+   <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
+    Top Destinations in Madhya Pradesh
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+    <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+     <img alt="Khajuraho temples showing intricate ancient stone carvings on temple walls under bright sunlight" class="w-full h-56 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/8c21693b-ae6e-40be-2a46-86d0cfd3e7aa.jpg" width="600"/>
+     <div class="p-6">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-3">
+       Khajuraho
+      </h3>
+      <p class="text-gray-600 mb-6">
+       Explore exquisite ancient temples known for their intricate carvings and UNESCO World Heritage status.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+     <img alt="A majestic Bengal tiger walking through dense forest in Bandhavgarh National Park with sunlight filtering through trees" class="w-full h-56 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/c449d809-a855-4e98-5719-e8f341174650.jpg" width="600"/>
+     <div class="p-6">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-3">
+       Bandhavgarh National Park
+      </h3>
+      <p class="text-gray-600 mb-6">
+       A renowned tiger reserve offering thrilling wildlife safaris and rich biodiversity.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+     <img alt="Sanchi Stupa, an ancient Buddhist monument with large hemispherical dome and stone carvings surrounded by trees" class="w-full h-56 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/e2fef4d2-afea-48d0-516b-991cae868287.jpg" width="600"/>
+     <div class="p-6">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-3">
+       Sanchi Stupa
+      </h3>
+      <p class="text-gray-600 mb-6">
+       Visit ancient Buddhist monuments and stupas, a UNESCO World Heritage site.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+     <img alt="Orchha Palace complex with river view at sunset, showing historic architecture and orange sky" class="w-full h-56 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/df7cee11-9839-43fe-d6ea-eeff291ab083.jpg" width="600"/>
+     <div class="p-6">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-3">
+       Orchha
+      </h3>
+      <p class="text-gray-600 mb-6">
+       Explore the majestic palaces and temples set along the Betwa River with stunning sunset views.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+     <img alt="Ujjain Mahakaleshwar Temple illuminated at night with devotees and traditional lamps" class="w-full h-56 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/843d9814-2525-4562-45b2-764fbbe14a05.jpg" width="600"/>
+     <div class="p-6">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-3">
+       Ujjain
+      </h3>
+      <p class="text-gray-600 mb-6">
+       Visit one of the twelve Jyotirlinga shrines, famous for its spiritual significance and festivals.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+     <img alt="Pachmarhi hill station showing lush green hills and cascading waterfalls under cloudy sky" class="w-full h-56 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/106f533a-6be5-4e71-b524-8e76d037ad97.jpg" width="600"/>
+     <div class="p-6">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-3">
+       Pachmarhi
+      </h3>
+      <p class="text-gray-600 mb-6">
+       The only hill station in Madhya Pradesh, known for its waterfalls, caves, and serene nature.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Culture Section -->
+  <section class="bg-white py-16 shadow-inner" id="culture">
+   <div class="container mx-auto px-6 md:px-0 max-w-6xl">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
+     Experience the Vibrant Culture
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+     <div class="flex flex-col items-center text-center">
+      <img alt="Traditional folk dancers of Madhya Pradesh in colorful attire performing a cultural dance" class="rounded-xl shadow-md mb-6 object-cover w-full h-48" height="200" src="https://storage.googleapis.com/a1aa/image/55f4b0b8-54e4-472f-05f6-1dd298b982d0.jpg" width="300"/>
+      <h3 class="text-2xl font-semibold text-gray-800 mb-3">
+       Folk Dance &amp; Music
+      </h3>
+      <p class="text-gray-600">
+       Immerse yourself in the lively folk dances like Gaur Maria, and soulful tribal music that tell stories of the land.
+      </p>
+     </div>
+     <div class="flex flex-col items-center text-center">
+      <img alt="Artisans crafting traditional handicrafts and colorful textiles in Madhya Pradesh" class="rounded-xl shadow-md mb-6 object-cover w-full h-48" height="200" src="https://storage.googleapis.com/a1aa/image/08a88beb-fd07-4214-f8ca-73a48f99389f.jpg" width="300"/>
+      <h3 class="text-2xl font-semibold text-gray-800 mb-3">
+       Handicrafts &amp; Art
+      </h3>
+      <p class="text-gray-600">
+       Discover exquisite handicrafts like Chanderi and Maheshwari sarees, and intricate tribal artworks.
+      </p>
+     </div>
+     <div class="flex flex-col items-center text-center">
+      <img alt="Colorful festival celebrations in Madhya Pradesh with people in traditional dress and decorations" class="rounded-xl shadow-md mb-6 object-cover w-full h-48" height="200" src="https://storage.googleapis.com/a1aa/image/48870820-bef8-4197-2fe4-c53cb9604351.jpg" width="300"/>
+      <h3 class="text-2xl font-semibold text-gray-800 mb-3">
+       Festivals &amp; Traditions
+      </h3>
+      <p class="text-gray-600">
+       Celebrate vibrant festivals like Diwali, Navratri, and the unique Bhagoria festival with local communities.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Travel Tips Section -->
+  <section class="container mx-auto my-16 px-6 md:px-0 max-w-5xl" id="travel">
+   <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
+    Travel Tips &amp; Essentials
+   </h2>
+   <div class="bg-white rounded-3xl shadow-lg p-10 space-y-8">
+    <div class="flex items-start space-x-6">
+     <i class="fas fa-route text-green-600 text-4xl mt-1">
+     </i>
+     <div>
+      <h3 class="text-2xl font-semibold text-gray-800 mb-2">
+       Best Time to Visit
+      </h3>
+      <p class="text-gray-600">
+       October to March is ideal for pleasant weather and festivals. Avoid monsoon season for wildlife safaris.
+      </p>
+     </div>
+    </div>
+    <div class="flex items-start space-x-6">
+     <i class="fas fa-shield-alt text-green-600 text-4xl mt-1">
+     </i>
+     <div>
+      <h3 class="text-2xl font-semibold text-gray-800 mb-2">
+       Safety &amp; Health
+      </h3>
+      <p class="text-gray-600">
+       Stay hydrated, use mosquito repellent in forest areas, and follow local guidelines during wildlife tours.
+      </p>
+     </div>
+    </div>
+    <div class="flex items-start space-x-6">
+     <i class="fas fa-wallet text-green-600 text-4xl mt-1">
+     </i>
+     <div>
+      <h3 class="text-2xl font-semibold text-gray-800 mb-2">
+       Budget &amp; Currency
+      </h3>
+      <p class="text-gray-600">
+       Indian Rupee (INR) is the currency. Budget travelers can find affordable stays and food, while luxury options are also available.
+      </p>
+     </div>
+    </div>
+    <div class="flex items-start space-x-6">
+     <i class="fas fa-plane-departure text-green-600 text-4xl mt-1">
+     </i>
+     <div>
+      <h3 class="text-2xl font-semibold text-gray-800 mb-2">
+       Getting There
+      </h3>
+      <p class="text-gray-600">
+       Major airports: Bhopal, Indore, Jabalpur. Well-connected by rail and road to major Indian cities.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Call to Action Section -->
+  <section class="bg-green-700 text-white py-16 rounded-t-3xl shadow-inner">
+   <div class="container mx-auto px-6 md:px-0 max-w-4xl text-center">
+    <h2 class="text-4xl font-extrabold mb-6">
+     Ready to Explore Madhya Pradesh?
+    </h2>
+    <p class="text-lg mb-10 max-w-3xl mx-auto">
+     Plan your trip today and experience the heart of Incredible India like never before.
+    </p>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8 mt-16">
+   <div class="container mx-auto px-6 md:px-0 flex flex-col md:flex-row justify-between items-center text-sm">
+    <p>
+     © 2025 Explore Madhya Pradesh. All rights reserved.
+    </p>
+    <p>
+     Made with
+     <i class="fas fa-heart text-red-500 mx-1">
+     </i>
+     by Ajay Songara & Mohit Malviya
+    </p>
+    <div class="flex space-x-6 mt-4 md:mt-0">
+     <a aria-label="Instagram" class="hover:text-white transition" href="https://www.instagram.com/itz____ajju_____1/">
+      <i class="fab fa-instagram text-lg">
+      </i>
+     </a>
+     <a aria-label="LinkedIn" class="hover:text-white transition" href="https://www.linkedin.com/in/ajay-songara-296063341/">
+      <i class="fab fa-linkedin-in text-lg">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>

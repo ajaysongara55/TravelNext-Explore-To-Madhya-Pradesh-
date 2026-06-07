@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shringar Hotel — Ujjain | Comfort · Heritage · Convenience</title>
+  <meta name="description" content="Shringar Hotel — a comfortable stay in the heart of Ujjain. Close to Mahakaleshwar Temple, clean rooms, home-cooked food, and friendly service." />
+  <style>
+    :root{--accent:#D97706;--muted:#6B7280;--bg:#F8FAFC;--card:#FFFFFF}
+    *{box-sizing:border-box}
+    body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial;line-height:1.5;margin:0;background:var(--bg);color:#0F172A}
+    a{color:var(--accent);text-decoration:none}
+    header{background:linear-gradient(90deg, rgba(255,255,255,0.9), rgba(255,255,255,0.8));backdrop-filter: blur(6px);position:sticky;top:0;z-index:40;box-shadow:0 1px 6px rgba(2,6,23,0.06)}
+    .nav{max-width:1100px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:700}
+    .brand .logo{width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#fb923c);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav ul{display:flex;gap:18px;align-items:center;margin:0;padding:0;list-style:none}
+    .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:8px;font-weight:600}
+
+    /* Hero */
+    .hero{max-width:1200px;margin:28px auto 12px;padding:24px;display:grid;grid-template-columns:1fr 380px;gap:22px}
+    .hero-card{background:var(--card);border-radius:14px;box-shadow:0 6px 20px rgba(15,23,40,0.06);overflow:hidden}
+    .hero-left{padding:28px}
+    .kicker{color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:1px}
+    h1{margin:8px 0 10px;font-size:28px}
+    p.lead{color:var(--muted);margin:0 0 18px}
+    .features{display:flex;gap:12px;flex-wrap:wrap}
+    .feature{background:#FFFAF2;padding:10px 12px;border-radius:10px;font-weight:600;font-size:14px}
+
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
+    .gallery img{width:100%;height:110px;object-fit:cover;border-radius:8px}
+
+    /* Booking form */
+    .booking{padding:20px}
+    label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+    input[type=text],input[type=email],input[type=date],select{width:100%;padding:10px;border-radius:8px;border:1px solid #E6E9EE;margin-bottom:12px}
+    .row{display:flex;gap:10px}
+    .row > *{flex:1}
+
+    /* Sections */
+    .container{max-width:1100px;margin:18px auto;padding:0 20px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.04)}
+    .amenities{display:flex;flex-wrap:wrap;gap:12px}
+    .amenity{background:#F1F5F9;padding:10px 12px;border-radius:10px;font-weight:600;color:#0F172A}
+
+    footer{background:#0F172A;color:white;padding:22px 0;margin-top:20px}
+    .flex{display:flex;gap:18px;align-items:center}
+
+    /* Responsive */
+    @media (max-width:940px){.hero{grid-template-columns:1fr;}.grid-3{grid-template-columns:1fr;}.gallery img{height:90px}}
+    @media (max-width:420px){.brand{font-size:14px}.hero-left h1{font-size:22px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">
+        <div class="logo">SH</div>
+        <div>
+          <div style="font-size:16px">Shringar Hotel</div>
+          <div style="font-size:12px;color:var(--muted)">Ujjain — Near Mahakaleshwar</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <a class="hover:text-green-700 transition" href="home">
+      home
+     </a>
+          <li><a href="#rooms">Rooms</a></li>
+          <li><a href="#amenities">Amenities</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn" href="#booking">Book Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-card hero-left">
+        <div class="kicker">Experience Ujjain</div>
+        <h1>Comfort & Tradition in the Heart of Ujjain</h1>
+        <p class="lead">A warm, family-run hotel located minutes from the Mahakaleshwar Temple and other historic ghats. Clean rooms, local cuisine, and personalised service.</p>
+        <div class="features">
+          <div class="feature">Free breakfast</div>
+          <div class="feature">Temple shuttle</div>
+          <div class="feature">Family rooms</div>
+          <div class="feature">Contactless check-in</div>
+        </div>
+
+        <div id="gallery" class="gallery" aria-hidden="false">
+          <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3d2d3b5b8c7d2e6b6f8a" alt="Hotel exterior">
+          <img src="https://thearchitecturedesigns.com/wp-content/uploads/2019/12/9-Corinthia-Hotel-London.jpg" alt="Lobby">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.HT1pSZxiMSH6wxtVLvvMPwHaEo?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Room interior">
+        </div>
+
+        <h3 style="margin-top:18px">Why guests love us</h3>
+        <ul style="color:var(--muted);margin-top:8px">
+          <li>Walking distance to holy sites and ghats</li>
+          <li>Simple, clean rooms with hot water and AC</li>
+          <li>Authentic local vegetarian meals on request</li>
+        </ul>
+      </div>
+
+      <aside class="card booking" id="booking">
+        <h3 style="margin-top:0">Check availability</h3>
+        <form onsubmit="event.preventDefault();alert('This is a static demo booking. Integrate with your backend to accept bookings.')">
+          <label for="name">Full name</label>
+          <input type="text" id="name" placeholder="Your full name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@example.com" required>
+
+          <div class="row">
+            <div>
+              <label for="checkin">Check-in</label>
+              <input type="date" id="checkin" required>
+            </div>
+            <div>
+              <label for="checkout">Check-out</label>
+              <input type="date" id="checkout" required>
+            </div>
+          </div>
+
+          <label for="room">Room type</label>
+          <select id="room">
+            <option>Standard Double — ₹2,000/night</option>
+            <option>Deluxe AC — ₹3,200/night</option>
+            <option>Family Suite — ₹4,500/night</option>
+          </select>
+
+          <label for="notes">Special requests</label>
+          <input type="text" id="notes" placeholder="Example: pick-up from station">
+
+          <button type="submit" class="btn" style="width:100%">Request Booking</button>
+        </form>
+
+        <div style="margin-top:12px;color:var(--muted);font-size:13px">Call: <strong>+91 99999 00000</strong><br>Email: <a href="mailto:info@shringar.com">info@shringar.com</a></div>
+      </aside>
+    </section>
+
+    <section class="container">
+      <h2 id="rooms">Rooms & Pricing</h2>
+      <div class="grid-3" style="margin-top:12px">
+        <div class="card">
+          <h3>Standard Double</h3>
+          <p style="color:var(--muted)">Cosy double bed, ensuite, complimentary breakfast.</p>
+          <p style="font-weight:700;margin-top:10px">₹2,000 / night</p>
+        </div>
+        <div class="card">
+          <h3>Deluxe AC</h3>
+          <p style="color:var(--muted)">Larger room, AC, TV, kettle, tea/coffee.</p>
+          <p style="font-weight:700;margin-top:10px">₹3,200 / night</p>
+        </div>
+        <div class="card">
+          <h3>Family Suite</h3>
+          <p style="color:var(--muted)">Two bedrooms, living area — great for families.</p>
+          <p style="font-weight:700;margin-top:10px">₹4,500 / night</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" style="margin-top:18px">
+      <h2 id="amenities">Amenities</h2>
+      <div class="card" style="margin-top:12px">
+        <div class="amenities">
+          <div class="amenity">Complimentary breakfast</div>
+          <div class="amenity">Free Wi‑Fi</div>
+          <div class="amenity">24/7 Reception</div>
+          <div class="amenity">Airport & station pick-up</div>
+          <div class="amenity">On-site vegetarian restaurant</div>
+          <div class="amenity">Daily housekeeping</div>
+        </div>
+      </div>
+
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shringar Hotel — Ujjain Live Map (Official Places & Routes)</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+
+  <style>
+    :root{
+      --accent:#D97706; --muted:#6B7280;
+    }
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Arial;}
+    .wrap{display:flex;min-height:100vh;}
+    /* sidebar */
+    .sidebar{
+      width:360px;
+      max-width:38%;
+      min-width:260px;
+      background:#fff;
+      box-shadow:0 6px 20px rgba(2,6,23,0.06);
+      padding:18px;
+      box-sizing:border-box;
+      overflow:auto;
+    }
+    .mapwrap{flex:1;position:relative;}
+    #map{position:absolute;inset:0;height:100%;width:100%;}
+    h2{margin:0 0 8px 0;font-size:18px;}
+    .place{padding:10px;border-radius:10px;margin-bottom:10px;background:#FBFBFD;cursor:pointer;display:flex;gap:10px;align-items:flex-start;}
+    .place .title{font-weight:700;}
+    .place small{color:var(--muted);display:block;margin-top:6px;}
+    .btn{background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;border:none;cursor:pointer;font-weight:600}
+    .muted{color:var(--muted);font-size:13px}
+    .search{display:flex;gap:8px;margin-bottom:10px}
+    .search input{flex:1;padding:8px;border-radius:8px;border:1px solid #E6E9EE}
+    .footer-note{font-size:12px;color:var(--muted);margin-top:12px}
+    @media (max-width:900px){ .wrap{flex-direction:column;} .sidebar{max-width:100%;width:100%;order:2;} .mapwrap{order:1;height:60vh} #map{height:60vh}}
+  </style>
+</head>
+<body>
+
+<div class="wrap">
+  <aside class="sidebar" aria-label="Places list">
+    <h2>Ujjain — Temples, Palaces & Shringar Hotel</h2>
+    <div class="muted">Allow location to see your live position and get routes.</div>
+
+    <div style="margin-top:12px" class="search">
+      <input id="searchInput" placeholder="Search place name (e.g., Mahakaleshwar)" />
+      <button id="clearBtn" class="btn" style="padding:8px">Clear</button>
+    </div>
+
+    <div id="placesList" aria-live="polite"></div>
+
+    <div style="margin-top:14px">
+      <button id="centerBtn" class="btn">Center on My Location</button>
+      <button id="resetRoute" class="btn" style="background:#374151;margin-left:8px">Clear Route</button>
+    </div>
+
+    <div class="footer-note">
+      Places data editable in the page JSON. Map uses OpenStreetMap & Leaflet (no API key).
+    </div>
+  </aside>
+
+  <div class="mapwrap">
+    <div id="map" role="application" aria-label="Live map"></div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+
+<script>
+/*
+  placesData: edit/add entries here.
+  Fields: id, name, coords [lat,lng], category, description, hours, contact, website
+*/
+const placesData = [
+  {
+    id: 'mahakal',
+    name: 'Shree Mahakaleshwar Jyotirlinga',
+    coords: [23.18278, 75.76833],
+    category: 'Temple',
+    description: 'One of the twelve Jyotirlingas, Ujjain\'s most famous temple.',
+    hours: 'Open daily — early morning to late night (timings vary on festivals)',
+    contact: '',
+    website: 'https://shrimahakaleshwar.com/'
+  },
+  {
+    id: 'harsiddhi',
+    name: 'Harsiddhi Temple',
+    coords: [23.184544, 75.76475],
+    category: 'Temple',
+    description: 'Ancient Shaktipeeth near Mahakaleshwar, known for lamp-pillars and Navratri celebrations.',
+    hours: 'Open daily',
+    contact: '',
+    website: ''
+  },
+  {
+    id: 'kalbhairav',
+    name: 'Kal Bhairav Temple',
+    coords: [23.1798, 75.7830],
+    category: 'Temple',
+    description: 'Temple dedicated to Kal Bhairav — a guardian deity of Ujjain.',
+    hours: 'Open daily',
+    contact: '',
+    website: ''
+  },
+  {
+    id: 'ramghat',
+    name: 'Ram Ghat (Shipra River)',
+    coords: [23.1776, 75.7875],
+    category: 'Ghat',
+    description: 'Riverside ghat on the Shipra, popular for aarti and holy dips.',
+    hours: '24 hours (aarti times vary)',
+    contact: '',
+    website: ''
+  },
+  {
+    id: 'gadkalika',
+    name: 'Gadkalika (Gadkalika Temple)',
+    coords: [23.1614, 75.8068],
+    category: 'Temple',
+    description: 'A well-known Kali temple associated with poet Kalidasa and historic traditions.',
+    hours: 'Open daily',
+    contact: '',
+    website: ''
+  },
+  {
+    id: 'kaliadeh',
+    name: 'Kaliadeh Palace (Kaliyadeh)',
+    coords: [23.2060, 75.8036], // approximate island coordinates — edit if you have a precise one
+    category: 'Palace',
+    description: 'Historical palace on the Shipra River, known for its Mughal-influenced architecture.',
+    hours: 'Best viewed from outside; check local timings for entry',
+    contact: '',
+    website: ''
+  },
+  {
+    id: 'vikramkirti',
+    name: 'Vikram Kirti Mandir (Museum & Cultural Centre)',
+    coords: [23.1790, 75.7810],
+    category: 'Museum',
+    description: 'Cultural centre and museum dedicated to King Vikramaditya and local history.',
+    hours: 'Usually open during day hours',
+    contact: '',
+    website: ''
+  },
+  {
+    id: 'shringar',
+    name: 'Shringar Hotel (Your Hotel)',
+    coords: [23.1765, 75.7885],
+    category: 'Hotel',
+    description: 'Shringar Hotel — Comfort & Tradition, near Mahakaleshwar Temple.',
+    hours: '24/7 front desk',
+    contact: '+91 99999 00000',
+    website: ''
+  },
+  // add more known places as desired...
+];
+
+/* --- Initialize Map --- */
+const map = L.map('map', { zoomControl: true }).setView([23.1793, 75.7849], 13);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 19,
+  attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
+
+/* --- Marker layer & icons --- */
+const markers = {};
+const iconByCategory = {
+  'Temple': '🔱',
+  'Ghat': '🌊',
+  'Palace': '🏰',
+  'Museum': '🏛️',
+  'Hotel': '🏨',
+  'default': '📍'
+};
+
+placesData.forEach(p => {
+  const emoji = iconByCategory[p.category] || iconByCategory.default;
+  const divIcon = L.divIcon({
+    html: `<div style="font-size:22px">${emoji}</div>`,
+    className: 'place-icon',
+    iconSize: [24,24],
+    iconAnchor: [12,12]
+  });
+
+  const m = L.marker(p.coords, { icon: divIcon }).addTo(map);
+  const popupHtml = `
+    <div style="min-width:200px">
+      <strong style="font-size:15px">${p.name}</strong>
+      <div class="muted" style="margin-top:6px">${p.category}</div>
+      <div style="margin-top:8px">${p.description}</div>
+      ${p.hours?`<div style="margin-top:8px"><strong>Hours:</strong> ${p.hours}</div>`:''}
+      ${p.contact?`<div><strong>Contact:</strong> ${p.contact}</div>`:''}
+      ${p.website?`<div><a href="${p.website}" target="_blank" rel="noopener">Website</a></div>`:''}
+      <div style="margin-top:8px;display:flex;gap:8px">
+        <button class="btn" onclick="startNavigate('${p.id}')">Navigate here</button>
+        <button class="btn" style="background:#374151" onclick="centerTo(${p.coords[0]},${p.coords[1]})">Center</button>
+      </div>
+    </div>
+  `;
+  m.bindPopup(popupHtml);
+  markers[p.id] = m;
+});
+
+/* --- Side list (searchable) --- */
+const placesListEl = document.getElementById('placesList');
+function renderList(filter='') {
+  placesListEl.innerHTML = '';
+  const list = placesData.filter(p=> p.name.toLowerCase().includes(filter.toLowerCase()) || p.category.toLowerCase().includes(filter.toLowerCase()));
+  list.forEach(p=>{
+    const div = document.createElement('div');
+    div.className = 'place';
+    div.innerHTML = `<div style="font-size:20px">${iconByCategory[p.category]||iconByCategory.default}</div>
+                     <div style="flex:1">
+                       <div class="title">${p.name}</div>
+                       <small>${p.category} • ${p.description.slice(0,80)}${p.description.length>80?'...':''}</small>
+                     </div>`;
+    div.onclick = ()=>{ markers[p.id].openPopup(); map.panTo(p.coords); };
+    placesListEl.appendChild(div);
+  });
+}
+renderList();
+
+document.getElementById('searchInput').addEventListener('input', (e)=>renderList(e.target.value));
+document.getElementById('clearBtn').addEventListener('click', ()=>{
+  document.getElementById('searchInput').value='';
+  renderList();
+});
+
+/* --- Live user tracking --- */
+let userMarker=null, userCircle=null, watchId=null, currentLatLng=null;
+function onLocationUpdate(pos) {
+  const lat = pos.coords.latitude, lng = pos.coords.longitude, acc = pos.coords.accuracy || 30;
+  currentLatLng = L.latLng(lat,lng);
+
+  if(!userMarker){
+    const blueIcon = L.icon({
+      iconUrl: 'https://maps.gstatic.com/intl/en_us/mapfiles/markers2/measle_blue.png',
+      iconSize: [12,12]
+    });
+    userMarker = L.marker([lat,lng], { icon: blueIcon }).addTo(map).bindPopup('आप यहाँ हैं / You are here');
+    userCircle = L.circle([lat,lng], { radius: acc, color:'#2563eb', opacity:0.25 }).addTo(map);
+    // initial fit to include user + all places
+    const bounds = L.latLngBounds( placesData.map(p=>p.coords).concat([[lat,lng]]) );
+    map.fitBounds(bounds, { padding: [30,30] });
+  } else {
+    userMarker.setLatLng([lat,lng]);
+    userCircle.setLatLng([lat,lng]).setRadius(acc);
+  }
+}
+function onLocationError(err){
+  console.warn('Location error:', err.message || err.code);
+  // ask user to enable location; do not spam alert
+}
+if(navigator.geolocation){
+  watchId = navigator.geolocation.watchPosition(onLocationUpdate, onLocationError, { enableHighAccuracy:true, maximumAge:10000, timeout:10000});
+} else {
+  alert('आपका ब्राउज़र लोकेशन सपोर्ट नहीं करता / Browser does not support Geolocation.');
+}
+
+/* --- Routing (one active route at a time) --- */
+let activeRouteControl = null;
+function startNavigate(placeId){
+  const place = placesData.find(p=>p.id===placeId);
+  if(!place) return;
+  if(!currentLatLng){
+    alert('कृपया पहले Allow Location कर के अपनी लाइव लोकेशन शेयर करें ताकि रूट दिखाया जा सके।\nPlease allow location access first to generate a route.');
+    markers[placeId].openPopup();
+    return;
+  }
+
+  // remove existing route
+  if(activeRouteControl){ map.removeControl(activeRouteControl); activeRouteControl = null; }
+
+  activeRouteControl = L.Routing.control({
+    waypoints: [
+      currentLatLng,
+      L.latLng(place.coords[0], place.coords[1])
+    ],
+    router: L.Routing.osrmv1({ serviceUrl: 'https://router.project-osrm.org/route/v1' }),
+    createMarker: function(i, wp, nWps){
+      // 0 => user, last => destination
+      if(i===0) return L.marker(wp.latLng, { icon: L.icon({ iconUrl:'https://maps.gstatic.com/intl/en_us/mapfiles/markers2/measle_blue.png', iconSize:[12,12] }) });
+      return L.marker(wp.latLng);
+    },
+    lineOptions: { styles: [{ color: '#D97706', weight: 5, opacity: 0.9 }] },
+    addWaypoints:false,
+    draggableWaypoints:false,
+    routeWhileDragging:false,
+    showAlternatives:false
+  }).addTo(map);
+
+  // open destination popup
+  markers[placeId].openPopup();
+}
+
+/* --- Utilities --- */
+function centerTo(lat, lng){
+  map.panTo([lat,lng]);
+  map.setZoom(16);
+}
+document.getElementById('centerBtn').addEventListener('click', ()=>{
+  if(currentLatLng) map.panTo(currentLatLng);
+  else alert('पहले Allow Location करें / Allow location to center.');
+});
+document.getElementById('resetRoute').addEventListener('click', ()=>{
+  if(activeRouteControl){ map.removeControl(activeRouteControl); activeRouteControl = null; }
+});
+
+/* --- Cleanup on unload --- */
+window.addEventListener('beforeunload', ()=>{
+  if(watchId && navigator.geolocation) navigator.geolocation.clearWatch(watchId);
+});
+</script>
+
+
+    <section class="container" style="margin-top:18px">
+      <h2>Map & Nearby</h2>
+      <div class="card" style="display:flex;gap:16px;flex-wrap:wrap;align-items:stretch">
+        <div style="flex:1;min-width:260px">
+          <h4>Location</h4>
+          <p style="color:var(--muted)">Located centrally in Ujjain — short walk to Mahakaleshwar Temple, Harishtal Ghat, and local markets.</p>
+          <ul style="color:var(--muted)">
+            <li>Mahakaleshwar Temple — 0.7 km</li>
+            <li>Ujjain Railway Station — 2.8 km</li>
+            <li>Ram Ghat & Shipra River — 1.2 km</li>
+          </ul>
+        </div>
+        <div style="flex:1;min-width:300px">
+          <!-- Replace src with an actual Google Maps embed link for a real site -->
+          <iframe width="100%" height="260" style="border:0;border-radius:10px" loading="lazy"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.0000000000005!2d75.7753!3d23.1793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd8f00000001%3A0x0000000000000000!2sUjjain%2C%20Madhya%20Pradesh%2C%20India!5e0!3m2!1sen!2sin!4v1610000000000"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="contact" style="margin-top:18px;margin-bottom:28px">
+      <h2>Contact & Policies</h2>
+      <div class="card" style="display:flex;gap:18px;flex-wrap:wrap">
+        <div style="flex:1;min-width:280px">
+          <h4>Contact</h4>
+          <p style="color:var(--muted)">Shringar Hotel, Station Road, Ujjain — Phone: +91 99999 00000 — Email: info@shringar.com</p>
+          <p style="color:var(--muted)"><strong>Check-in:</strong> 2:00 PM &nbsp; <strong>Check-out:</strong> 11:00 AM</p>
+        </div>
+        <div style="flex:1;min-width:280px">
+          <h4>Policies</h4>
+          <ul style="color:var(--muted)">
+            <li>Cancellation: Free up to 24 hours before arrival</li>
+            <li>Children: Free stay for kids under 5 sharing existing beds</li>
+            <li>Pets: Not permitted</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="nav" style="align-items:center">
+      <div>
+        <div style="font-weight:700">Shringar Hotel</div>
+        <div style="font-size:13px;color:#9CA3AF">© " + new Date().getFullYear() + " Shringar Hotel — All rights reserved.</div>
+      </div>
+      <div style="margin-left:auto;color:#CBD5E1">Designed for Ujjain visitors · Friendly staff · Local guidance</div>
+    </div>
+  </footer>
+
+  <script>
+    // Small helper: update footer year if JS enabled
+    (function(){
+      try{
+        const el = document.querySelector('footer div div:last-child');
+        if(el) el.innerHTML = '© ' + new Date().getFullYear() + ' Shringar Hotel — All rights reserved.';
+      }catch(e){/*ignore*/}
+    })();
+  </script>
+</body>
+</html>

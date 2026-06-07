@@ -1,0 +1,581 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Explore Madhya Pradesh - Heart of Incredible India
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7fafc;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.45);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            font-size: 30px;
+        }
+
+        #Fix{
+            position: fixed;
+            top: 0;
+        }
+    
+  </style>
+  <!-- Header -->
+  <header class="bg-white shadow-md fixed w-full z-30" id="Fix">
+   <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center p-4 md:p-6">
+    <a class="text-3xl font-extrabold text-green-700 hover:text-green-900 transition duration-300 rounded-lg px-2 py-1 select-none" href="#">
+     TravelNest - Explore Madhya Pradesh
+    </a>
+    <div class="mt-4 md:mt-0 flex flex-wrap justify-center gap-6 text-gray-700 font-semibold text-lg">
+     <a class="hover:text-green-700 transition" href="home">
+      Home
+     </a>
+     <a class="hover:text-green-700 transition" href="about">
+      about
+     </a>
+     <a class="hover:text-green-700 transition" href="locations">
+      locations
+     </a>
+     <a class="hover:text-green-700 transition" href="contact">
+      Contact
+     </a>
+     <a class="hover:text-green-700 transition" href="login">
+      Login
+     </a>
+     <a class="hover:text-green-700 transition" href="hotel">
+      hotel
+     </a>
+     <a class="hover:text-green-700 transition" href="Map">
+      Maps
+     </a>
+    </div>
+   </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="relative h-screen w-full overflow-hidden rounded-b-3xl shadow-lg mt-[72px] md:mt-[96px]">
+   <img alt="Scenic landscape of Madhya Pradesh showing lush green forests, winding rivers, and hills under a bright blue sky" class="absolute inset-0 w-full h-full object-cover" height="1080" loading="eager" src="https://storage.googleapis.com/a1aa/image/f813e2ca-397f-4ab1-69a7-0eb836d4f912.jpg" width="1920"/>
+   <div class="hero-overlay px-6 md:px-12">
+    <h1 class="text-5xl md:text-7xl font-extrabold text-white drop-shadow-lg mb-6 leading-tight max-w-4xl">
+     Discover the Heart of Incredible India
+    </h1>
+    <p class="text-lg md:text-2xl text-green-200 max-w-3xl mb-10 drop-shadow-md">
+     Explore the rich heritage, vibrant culture, and breathtaking landscapes of Madhya Pradesh.
+    </p>
+    <a class="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-semibold rounded-full px-8 py-4 text-lg shadow-lg transition duration-300" href="#destinations">
+     <i class="fas fa-map-marker-alt mr-3 text-xl">
+     </i>
+     Explore Destinations
+    </a>
+   </div>
+  </section>
+  <!-- Travel Logos Section -->
+  <section class="container mx-auto my-16 px-6 md:px-0">
+   <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
+    Trusted By Travelers Worldwide
+   </h2>
+   <div class="flex flex-wrap justify-center items-center gap-12">
+    <a class="group w-[300px] h-[200px] bg-gradient-to-r from-[#013b32] text-[#013b32] rounded-lg shadow-md flex flex-col justify-between items-center p-4 font-bold text-xl transition-transform duration-300 hover:scale-110 hover:bg-[#a77739] hover:text-white" href="traveler">
+    <img alt="TripAdvisor logo in green and white with owl icon" class="h-20 object-contain" height="80" src="https://storage.googleapis.com/a1aa/image/b2be12e2-bddb-48a5-2333-ec651de00dbc.jpg" width="150"/>
+    </a>
+    <a class="group w-[300px] h-[200px] bg-gradient-to-r from-[#013b32] text-[#013b32] rounded-lg shadow-md flex flex-col justify-between items-center p-4 font-bold text-xl transition-transform duration-300 hover:scale-110 hover:bg-[#a77739] hover:text-white" href="traveler">
+    <img alt="Lonely Planet logo with blue globe icon and text" class="h-20 object-contain" height="80" src="https://storage.googleapis.com/a1aa/image/e028872c-9d98-48c7-c985-5c300d182f72.jpg" width="150"/>
+    </a>
+    <a class="group w-[300px] h-[200px] bg-gradient-to-r from-[#013b32] text-[#013b32] rounded-lg shadow-md flex flex-col justify-between items-center p-4 font-bold text-xl transition-transform duration-300 hover:scale-110 hover:bg-[#a77739] hover:text-white" href="traveler">
+    <img alt="MakeMyTrip logo with orange and blue colors and airplane icon" class="h-20 object-contain" height="80" src="https://storage.googleapis.com/a1aa/image/819a5ecc-a546-437c-f3b2-ea31b14cacb2.jpg" width="150"/>
+    </a>
+   </div>
+  </section>
+  <!-- Popular Destinations Section -->
+  <section class="container mx-auto my-16 px-6 md:px-0" id="destinations">
+   <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
+    Top Destinations in Madhya Pradesh
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+    <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+     <img alt="Khajuraho temples showing intricate ancient stone carvings on temple walls under bright sunlight" class="w-full h-56 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/8c21693b-ae6e-40be-2a46-86d0cfd3e7aa.jpg" width="600"/>
+     <div class="p-6">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-3">
+       Khajuraho
+      </h3>
+      <p class="text-gray-600 mb-6">
+       Explore exquisite ancient temples known for their intricate carvings and UNESCO World Heritage status.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+     <img alt="A majestic Bengal tiger walking through dense forest in Bandhavgarh National Park with sunlight filtering through trees" class="w-full h-56 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/c449d809-a855-4e98-5719-e8f341174650.jpg" width="600"/>
+     <div class="p-6">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-3">
+       Bandhavgarh National Park
+      </h3>
+      <p class="text-gray-600 mb-6">
+       A renowned tiger reserve offering thrilling wildlife safaris and rich biodiversity.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+     <img alt="Sanchi Stupa, an ancient Buddhist monument with large hemispherical dome and stone carvings surrounded by trees" class="w-full h-56 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/e2fef4d2-afea-48d0-516b-991cae868287.jpg" width="600"/>
+     <div class="p-6">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-3">
+       Sanchi Stupa
+      </h3>
+      <p class="text-gray-600 mb-6">
+       Visit ancient Buddhist monuments and stupas, a UNESCO World Heritage site.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+     <img alt="Orchha Palace complex with river view at sunset, showing historic architecture and orange sky" class="w-full h-56 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/df7cee11-9839-43fe-d6ea-eeff291ab083.jpg" width="600"/>
+     <div class="p-6">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-3">
+       Orchha
+      </h3>
+      <p class="text-gray-600 mb-6">
+       Explore the majestic palaces and temples set along the Betwa River with stunning sunset views.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+     <img alt="Ujjain Mahakaleshwar Temple illuminated at night with devotees and traditional lamps" class="w-full h-56 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/843d9814-2525-4562-45b2-764fbbe14a05.jpg" width="600"/>
+     <div class="p-6">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-3">
+       Ujjain
+      </h3>
+      <p class="text-gray-600 mb-6">
+       Visit one of the twelve Jyotirlinga shrines, famous for its spiritual significance and festivals.
+      </p>
+     </div>
+    </div>
+    <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+     <img alt="Pachmarhi hill station showing lush green hills and cascading waterfalls under cloudy sky" class="w-full h-56 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/106f533a-6be5-4e71-b524-8e76d037ad97.jpg" width="600"/>
+     <div class="p-6">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-3">
+       Pachmarhi
+      </h3>
+      <p class="text-gray-600 mb-6">
+       The only hill station in Madhya Pradesh, known for its waterfalls, caves, and serene nature.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Culture Section -->
+  <section class="bg-white py-16 shadow-inner" id="culture">
+   <div class="container mx-auto px-6 md:px-0 max-w-6xl">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
+     Experience the Vibrant Culture
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+     <div class="flex flex-col items-center text-center">
+      <img alt="Traditional folk dancers of Madhya Pradesh in colorful attire performing a cultural dance" class="rounded-xl shadow-md mb-6 object-cover w-full h-48" height="200" src="https://storage.googleapis.com/a1aa/image/55f4b0b8-54e4-472f-05f6-1dd298b982d0.jpg" width="300"/>
+      <h3 class="text-2xl font-semibold text-gray-800 mb-3">
+       Folk Dance &amp; Music
+      </h3>
+      <p class="text-gray-600">
+       Immerse yourself in the lively folk dances like Gaur Maria, and soulful tribal music that tell stories of the land.
+      </p>
+     </div>
+     <div class="flex flex-col items-center text-center">
+      <img alt="Artisans crafting traditional handicrafts and colorful textiles in Madhya Pradesh" class="rounded-xl shadow-md mb-6 object-cover w-full h-48" height="200" src="https://storage.googleapis.com/a1aa/image/08a88beb-fd07-4214-f8ca-73a48f99389f.jpg" width="300"/>
+      <h3 class="text-2xl font-semibold text-gray-800 mb-3">
+       Handicrafts &amp; Art
+      </h3>
+      <p class="text-gray-600">
+       Discover exquisite handicrafts like Chanderi and Maheshwari sarees, and intricate tribal artworks.
+      </p>
+     </div>
+     <div class="flex flex-col items-center text-center">
+      <img alt="Colorful festival celebrations in Madhya Pradesh with people in traditional dress and decorations" class="rounded-xl shadow-md mb-6 object-cover w-full h-48" height="200" src="https://storage.googleapis.com/a1aa/image/48870820-bef8-4197-2fe4-c53cb9604351.jpg" width="300"/>
+      <h3 class="text-2xl font-semibold text-gray-800 mb-3">
+       Festivals &amp; Traditions
+      </h3>
+      <p class="text-gray-600">
+       Celebrate vibrant festivals like Diwali, Navratri, and the unique Bhagoria festival with local communities.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Travel Tips Section -->
+  <section class="container mx-auto my-16 px-6 md:px-0 max-w-5xl" id="travel">
+   <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
+    Travel Tips &amp; Essentials
+   </h2>
+   <div class="bg-white rounded-3xl shadow-lg p-10 space-y-8">
+    <div class="flex items-start space-x-6">
+     <i class="fas fa-route text-green-600 text-4xl mt-1">
+     </i>
+     <div>
+      <h3 class="text-2xl font-semibold text-gray-800 mb-2">
+       Best Time to Visit
+      </h3>
+      <p class="text-gray-600">
+       October to March is ideal for pleasant weather and festivals. Avoid monsoon season for wildlife safaris.
+      </p>
+     </div>
+    </div>
+    <div class="flex items-start space-x-6">
+     <i class="fas fa-shield-alt text-green-600 text-4xl mt-1">
+     </i>
+     <div>
+      <h3 class="text-2xl font-semibold text-gray-800 mb-2">
+       Safety &amp; Health
+      </h3>
+      <p class="text-gray-600">
+       Stay hydrated, use mosquito repellent in forest areas, and follow local guidelines during wildlife tours.
+      </p>
+     </div>
+    </div>
+    <div class="flex items-start space-x-6">
+     <i class="fas fa-wallet text-green-600 text-4xl mt-1">
+     </i>
+     <div>
+      <h3 class="text-2xl font-semibold text-gray-800 mb-2">
+       Budget &amp; Currency
+      </h3>
+      <p class="text-gray-600">
+       Indian Rupee (INR) is the currency. Budget travelers can find affordable stays and food, while luxury options are also available.
+      </p>
+     </div>
+    </div>
+    <div class="flex items-start space-x-6">
+     <i class="fas fa-plane-departure text-green-600 text-4xl mt-1">
+     </i>
+     <div>
+      <h3 class="text-2xl font-semibold text-gray-800 mb-2">
+       Getting There
+      </h3>
+      <p class="text-gray-600">
+       Major airports: Bhopal, Indore, Jabalpur. Well-connected by rail and road to major Indian cities.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+   <script>
+   // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Slider functionality
+    const slider = document.getElementById('sliderContainer');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    const slideWidth = 288 + 24; // slide width + gap (w-72 = 288px + 6 gap * 4 = 24px approx)
+
+    prevBtn.addEventListener('click', () => {
+      slider.scrollBy({ left: -slideWidth, behavior: 'smooth' });
+    });
+
+    nextBtn.addEventListener('click', () => {
+      slider.scrollBy({ left: slideWidth, behavior: 'smooth' });
+    });
+  </script>
+
+  <!-- ========== AI CHATBOT SECTION ========== -->
+  <section class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-4xl font-bold text-cyan-700 mb-3 text-center">Ask Our AI Travel Guide</h2>
+    <p class="text-gray-500 text-center mb-10">MP ke baare mein kuch bhi poochho — tourists ke saare common sawaal ka jawab yahan hai!</p>
+    <div style="max-width:700px;margin:0 auto;">
+      <div style="border-radius:16px;overflow:hidden;border:1px solid #cffafe;box-shadow:0 8px 30px rgba(8,145,178,0.1);">
+
+        <!-- Header -->
+        <div style="background:linear-gradient(135deg,#0e7490,#0891b2,#06b6d4);padding:16px 22px;display:flex;align-items:center;gap:14px;">
+          <div style="width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;border:2px solid rgba(255,255,255,0.25);">🗺️</div>
+          <div style="flex:1;">
+            <div style="color:#fff;font-size:16px;font-weight:600;font-family:'Poppins',sans-serif;">MP Travel Guide</div>
+            <div style="color:#a5f3fc;font-size:12px;margin-top:1px;font-family:'Poppins',sans-serif;">Free AI Chatbot · 50+ Tourist Questions Covered</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:6px;background:rgba(255,255,255,0.15);padding:5px 12px;border-radius:20px;">
+            <div style="width:7px;height:7px;border-radius:50%;background:#4ade80;"></div>
+            <span style="color:#fff;font-size:11px;font-weight:500;">Online</span>
+          </div>
+        </div>
+
+        <!-- Topic badges -->
+        <div style="background:#ecfeff;padding:8px 16px;display:flex;gap:7px;flex-wrap:wrap;border-bottom:1px solid #cffafe;">
+          <span style="background:#cffafe;color:#0e7490;font-size:11px;padding:3px 10px;border-radius:20px;font-weight:500;">🏛️ Temples</span>
+          <span style="background:#cffafe;color:#0e7490;font-size:11px;padding:3px 10px;border-radius:20px;font-weight:500;">🐯 Wildlife</span>
+          <span style="background:#cffafe;color:#0e7490;font-size:11px;padding:3px 10px;border-radius:20px;font-weight:500;">🍽️ Food</span>
+          <span style="background:#cffafe;color:#0e7490;font-size:11px;padding:3px 10px;border-radius:20px;font-weight:500;">🚆 Routes</span>
+          <span style="background:#cffafe;color:#0e7490;font-size:11px;padding:3px 10px;border-radius:20px;font-weight:500;">💰 Budget</span>
+          <span style="background:#cffafe;color:#0e7490;font-size:11px;padding:3px 10px;border-radius:20px;font-weight:500;">🏨 Hotels</span>
+          <span style="background:#cffafe;color:#0e7490;font-size:11px;padding:3px 10px;border-radius:20px;font-weight:500;">🎭 Culture</span>
+          <span style="background:#cffafe;color:#0e7490;font-size:11px;padding:3px 10px;border-radius:20px;font-weight:500;">🛡️ Safety</span>
+        </div>
+
+        <!-- Messages -->
+        <div id="mp-msgs" style="height:380px;overflow-y:auto;padding:20px;display:flex;flex-direction:column;gap:14px;background:#f8fdff;">
+          <div style="display:flex;align-items:flex-end;gap:10px;">
+            <div style="width:32px;height:32px;border-radius:50%;background:#0891b2;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;">🗺️</div>
+            <div style="max-width:82%;">
+              <div style="background:#fff;border:1px solid #e0f2fe;padding:12px 16px;border-radius:16px;border-bottom-left-radius:4px;font-size:14px;line-height:1.65;color:#1e3a4a;">
+                Namaste! 🙏 Main hoon aapka <strong>MP Travel Guide</strong>.<br><br>
+                Madhya Pradesh ke baare mein kuch bhi poochho — places, hotels, food, safety, shopping, festivals, transport — <b>50+ tourist questions</b> ka jawab mere paas hai! ✨
+              </div>
+              <div style="font-size:11px;color:#94a3b8;margin-top:5px;padding-left:4px;">Abhi · MP Expert</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick chips — scrollable rows -->
+        <div style="background:#fff;border-top:1px solid #e0f2fe;padding:10px 16px;">
+          <div style="font-size:11px;color:#94a3b8;margin-bottom:6px;font-family:'Poppins',sans-serif;">💡 Popular questions:</div>
+          <div style="display:flex;gap:7px;flex-wrap:wrap;">
+            <button onclick="mpChip(this)" style="background:#ecfeff;border:1px solid #a5f3fc;border-radius:20px;padding:5px 12px;font-size:12px;color:#0e7490;cursor:pointer;font-family:'Poppins',sans-serif;font-weight:500;white-space:nowrap;">🏛️ Best places</button>
+            <button onclick="mpChip(this)" style="background:#ecfeff;border:1px solid #a5f3fc;border-radius:20px;padding:5px 12px;font-size:12px;color:#0e7490;cursor:pointer;font-family:'Poppins',sans-serif;font-weight:500;white-space:nowrap;">🐯 Tiger safari</button>
+            <button onclick="mpChip(this)" style="background:#ecfeff;border:1px solid #a5f3fc;border-radius:20px;padding:5px 12px;font-size:12px;color:#0e7490;cursor:pointer;font-family:'Poppins',sans-serif;font-weight:500;white-space:nowrap;">🍽️ Local food</button>
+            <button onclick="mpChip(this)" style="background:#ecfeff;border:1px solid #a5f3fc;border-radius:20px;padding:5px 12px;font-size:12px;color:#0e7490;cursor:pointer;font-family:'Poppins',sans-serif;font-weight:500;white-space:nowrap;">📅 Best time</button>
+            <button onclick="mpChip(this)" style="background:#ecfeff;border:1px solid #a5f3fc;border-radius:20px;padding:5px 12px;font-size:12px;color:#0e7490;cursor:pointer;font-family:'Poppins',sans-serif;font-weight:500;white-space:nowrap;">💰 Budget trip</button>
+            <button onclick="mpChip(this)" style="background:#ecfeff;border:1px solid #a5f3fc;border-radius:20px;padding:5px 12px;font-size:12px;color:#0e7490;cursor:pointer;font-family:'Poppins',sans-serif;font-weight:500;white-space:nowrap;">🏨 Hotels</button>
+            <button onclick="mpChip(this)" style="background:#ecfeff;border:1px solid #a5f3fc;border-radius:20px;padding:5px 12px;font-size:12px;color:#0e7490;cursor:pointer;font-family:'Poppins',sans-serif;font-weight:500;white-space:nowrap;">🏰 Khajuraho</button>
+            <button onclick="mpChip(this)" style="background:#ecfeff;border:1px solid #a5f3fc;border-radius:20px;padding:5px 12px;font-size:12px;color:#0e7490;cursor:pointer;font-family:'Poppins',sans-serif;font-weight:500;white-space:nowrap;">🛕 Ujjain</button>
+            <button onclick="mpChip(this)" style="background:#ecfeff;border:1px solid #a5f3fc;border-radius:20px;padding:5px 12px;font-size:12px;color:#0e7490;cursor:pointer;font-family:'Poppins',sans-serif;font-weight:500;white-space:nowrap;">🛍️ Shopping</button>
+            <button onclick="mpChip(this)" style="background:#ecfeff;border:1px solid #a5f3fc;border-radius:20px;padding:5px 12px;font-size:12px;color:#0e7490;cursor:pointer;font-family:'Poppins',sans-serif;font-weight:500;white-space:nowrap;">🎭 Festivals</button>
+            <button onclick="mpChip(this)" style="background:#ecfeff;border:1px solid #a5f3fc;border-radius:20px;padding:5px 12px;font-size:12px;color:#0e7490;cursor:pointer;font-family:'Poppins',sans-serif;font-weight:500;white-space:nowrap;">🛡️ Safety tips</button>
+            <button onclick="mpChip(this)" style="background:#ecfeff;border:1px solid #a5f3fc;border-radius:20px;padding:5px 12px;font-size:12px;color:#0e7490;cursor:pointer;font-family:'Poppins',sans-serif;font-weight:500;white-space:nowrap;">🚌 Local transport</button>
+            <button onclick="mpChip(this)" style="background:#ecfeff;border:1px solid #a5f3fc;border-radius:20px;padding:5px 12px;font-size:12px;color:#0e7490;cursor:pointer;font-family:'Poppins',sans-serif;font-weight:500;white-space:nowrap;">📸 Photography spots</button>
+            <button onclick="mpChip(this)" style="background:#ecfeff;border:1px solid #a5f3fc;border-radius:20px;padding:5px 12px;font-size:12px;color:#0e7490;cursor:pointer;font-family:'Poppins',sans-serif;font-weight:500;white-space:nowrap;">🌿 Eco tourism</button>
+            <button onclick="mpChip(this)" style="background:#ecfeff;border:1px solid #a5f3fc;border-radius:20px;padding:5px 12px;font-size:12px;color:#0e7490;cursor:pointer;font-family:'Poppins',sans-serif;font-weight:500;white-space:nowrap;">🤿 Adventure sports</button>
+          </div>
+        </div>
+
+        <!-- Input -->
+        <div style="display:flex;gap:10px;padding:14px 16px;background:#fff;border-top:1px solid #e0f2fe;align-items:center;">
+          <div style="flex:1;display:flex;align-items:center;background:#f0fdff;border:1.5px solid #a5f3fc;border-radius:30px;padding:0 16px;gap:8px;" id="mp-wrap">
+            <span style="font-size:16px;">💬</span>
+            <input id="mp-input" type="text" placeholder="Kuch bhi poochho MP ke baare mein..."
+              onkeydown="if(event.key==='Enter')mpSend()"
+              onfocus="document.getElementById('mp-wrap').style.borderColor='#0891b2'"
+              onblur="document.getElementById('mp-wrap').style.borderColor='#a5f3fc'"
+              style="flex:1;border:none;background:transparent;font-size:14px;font-family:'Poppins',sans-serif;color:#1e3a4a;outline:none;padding:11px 0;"/>
+          </div>
+          <button onclick="mpSend()" style="width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,#0891b2,#0e7490);border:none;color:#fff;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;">➤</button>
+        </div>
+        <div style="background:#f0fdff;padding:7px 16px;text-align:center;border-top:1px solid #e0f2fe;">
+          <span style="font-size:11px;color:#67e8f9;">✦ Free · Offline · 50+ Questions · No API Needed</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+  (function(){
+    var kb=[
+      // PLACES
+      {k:["best place","top place","famous place","kahan jaun","tourist","visit","destination","ghumne","places","jagah","dekhne"],
+       a:"MP mein top jagahein:\n\n🏛️ <b>Khajuraho</b> — UNESCO World Heritage Temples\n🐯 <b>Bandhavgarh</b> — Tiger Reserve\n⛪ <b>Sanchi</b> — Buddhist Stupa\n🏔️ <b>Pachmarhi</b> — Hill Station\n🏰 <b>Orchha</b> — Medieval Fort & Temples\n🌆 <b>Bhopal</b> — City of Lakes\n⚔️ <b>Gwalior</b> — Grand Fort\n🛕 <b>Ujjain</b> — Mahakaleshwar\n💧 <b>Jabalpur</b> — Marble Rocks\n🏯 <b>Mandu</b> — City of Joy\n🌿 <b>Kanha</b> — Jungle Book Reserve\n🛕 <b>Omkareshwar</b> — Jyotirlinga\n\n💡 Tip: October–March best season hai!"},
+      // KHAJURAHO
+      {k:["khajuraho","temple","mandir","unesco","erotic","sculpture"],
+       a:"🏛️ <b>Khajuraho:</b>\n\n📍 Chhatarpur district\n🎟️ Entry: Indians ₹40 | Foreigners ₹600\n✈️ Airport & Railway station available\n🕐 Best: October–March\n⏰ Open: Sunrise to Sunset\n\n10th–11th century ke 20+ UNESCO temples hain.\n🌟 Western group sabse famous hai\n💡 Raat 7 baje Light & Sound show (₹250)\n🚕 Auto & taxi easily milti hai"},
+      // BANDHAVGARH / TIGER
+      {k:["bandhavgarh","tiger","safari","wildlife","jungle","bagh","kanha","pench","satpura"],
+       a:"🐯 <b>Tiger Reserves of MP:</b>\n\n<b>Bandhavgarh</b> — Umaria, highest tiger density!\n<b>Kanha</b> — Mandla, Jungle Book inspiration\n<b>Pench</b> — Chhindwara/Seoni\n<b>Satpura</b> — Hoshangabad\n<b>Panna</b> — Diamond mines + tigers\n\n🎟️ Safari: ₹1500–2500 (jeep)\n⏰ Subah 6–10 | Shaam 3–6\n🕐 Best: November–June\n⚠️ Advance booking zaroor karein!"},
+      // UJJAIN
+      {k:["ujjain","mahakal","jyotirlinga","kumbh","simhastha","bhasma aarti","shipra"],
+       a:"🛕 <b>Ujjain — Mahakaleshwar:</b>\n\n12 Jyotirlingon mein se ek!\n🙏 <b>Bhasma Aarti</b> — subah 4 baje (advance online booking!)\n🌊 Ram Ghat — evening aarti beautiful hai\n🔭 Jantar Mantar Observatory\n🏛️ Kal Bhairav Temple\n⏰ Har 12 saal mein Kumbh Mela\n\n📍 Bhopal se 183km | Indore se 55km\n🕐 Best: October–March"},
+      // PACHMARHI
+      {k:["pachmarhi","hill station","waterfall","jharna","bee falls","dhoopgarh"],
+       a:"🏔️ <b>Pachmarhi — Queen of Satpura:</b>\n\n🌡️ Temperature: 15–25°C (always pleasant!)\n🚆 Nearest: Pipariya station (47 km)\n\n🌊 Bee Falls | 🕳️ Jata Shankar Caves\n🌄 Dhoopgarh — MP ka highest point (1352m)\n🏊 Apsara Vihar | 🛕 Chauragarh Temple\n🦁 Satpura National Park nearby\n\n🏨 Budget hotel: ₹800–1500/night\n🕐 Best: July–Sep (waterfalls) | Oct–Feb (sightseeing)"},
+      // FOOD
+      {k:["food","khaana","khana","cuisine","eat","dish","local food","street food","poha","jalebi","dal bafla","bhutte","malpua","nashta"],
+       a:"🍽️ <b>MP ka Famous Khaana:</b>\n\n☀️ <b>Poha–Jalebi</b> — subah nashta, MP ki pehchaan!\n🫓 <b>Dal Bafla</b> — dal baati jaisi, must try!\n🌽 <b>Bhutte ka Kees</b> — Indore special corn dish\n🥟 <b>Mawa Bati</b> — sweet meetha\n🍬 <b>Malpua</b> — sweet pancake\n🥗 <b>Chakki ki Shaak</b> — atta ki sabzi\n🍢 <b>Garadu</b> — Indore ki yam fry\n🫙 <b>Shikanji</b> — MP style lemonade\n\n📍 <b>Indore Sarafa Bazaar</b> — India ka #1 street food!\nRaat 9 baje se subah 2 baje tak! 😋"},
+      // BEST TIME
+      {k:["best time","kab jayen","kab jana","season","weather","mausam","when to visit","month","monsoon","winter","summer"],
+       a:"📅 <b>MP Visit ka Best Time:</b>\n\n❄️ <b>October–March</b> ⭐ Sabse Acha!\n→ Sardi ka mausam, sab jagah perfect\n→ Tiger safari, temples, forts sab open\n→ Temperature 10–25°C\n\n🌧️ <b>July–September</b> Monsoon\n→ Pachmarhi waterfalls amazing\n→ Jungle harey bharey, khoobsurat\n→ Safaris kuch jagah band\n\n☀️ <b>April–June</b> — Garmi, avoid karo\n→ 40°C+ temperature, bahut hot\n→ Sirf Bandhavgarh safari theek hai\n\n🏆 <b>Best: November se February</b>"},
+      // BUDGET
+      {k:["budget","paisa","cost","kitna kharch","cheap","expensive","price","rate","fees","affordable","paise"],
+       a:"💰 <b>MP Travel Budget (Per Person/Day):</b>\n\n🏨 <b>Stay:</b>\n• Budget: ₹400–800/night\n• Mid-range: ₹1200–2500/night\n• Luxury: ₹4000+/night\n\n🍽️ <b>Khana:</b>\n• Dhaba: ₹80–150/meal\n• Restaurant: ₹250–500/meal\n\n🎟️ <b>Entry Fees:</b>\n• Khajuraho ₹40 | Sanchi ₹40\n• Orchha ₹250 | Safari ₹1500–2500\n\n🚗 <b>Transport:</b> Auto ₹50–150 | Cab ₹800–1500/day\n\n📊 <b>5-din trip estimate:</b>\n• Budget: ₹8,000–12,000\n• Comfort: ₹15,000–25,000\n• Luxury: ₹40,000+"},
+      // HOTELS
+      {k:["hotel","stay","accommodation","lodge","resort","dharamshala","guesthouse","ruk","rahna","booking"],
+       a:"🏨 <b>MP mein Kahan Rukein:</b>\n\n🌟 <b>MP Tourism Hotels</b> — sabse best!\n→ mpstdc.co.in se book karo\n→ Safe, clean aur affordable\n\n📍 <b>City-wise options:</b>\n• <b>Bhopal:</b> Jehan Numa Palace, Hotel Palash, Noor-Us-Sabah\n• <b>Indore:</b> Radisson, Sayaji, Hotel Shreemaya\n• <b>Khajuraho:</b> Lalit Temple View, Usha Bundela\n• <b>Pachmarhi:</b> MPTDC Amaltas, Hotel Highlands\n• <b>Gwalior:</b> Usha Kiran Palace, Shelter\n\n💡 Tip: Advance booking zaroor karo (Oct–Mar mein rush hota hai!)"},
+      // HOW TO REACH
+      {k:["kaise jayen","how to reach","route","train","flight","bus","travel","pahunche","distance","reach","transport"],
+       a:"🚆 <b>MP Kaise Pahunchen:</b>\n\n✈️ <b>Flights:</b>\nBhopal, Indore, Gwalior, Jabalpur, Khajuraho\n\n🚆 <b>Train (Best!):</b>\n• Delhi → Bhopal: 6–8 ghante\n• Mumbai → Bhopal: 12–14 ghante\n• Bhopal, Gwalior, Jabalpur — major junctions\n\n🚌 <b>Bus:</b>\nMP Tourism luxury buses available\nDelhi, Mumbai, Pune, Nagpur se connected\n\n🚗 <b>Road:</b>\nNH highways se well connected\nSelf drive ya cab — acha option\n\n💡 Tip: <b>Bhopal ya Indore ko base</b> banao!"},
+      // LOCAL TRANSPORT
+      {k:["local transport","auto","cab","taxi","rickshaw","bus","city","ander","andar","local"],
+       a:"🚌 <b>MP mein Local Transport:</b>\n\n🛺 <b>Auto Rickshaw:</b> ₹30–150 (short trips)\n🚕 <b>Cab/Taxi:</b> Ola, Uber (Bhopal, Indore, Gwalior mein)\n🛺 <b>E-Rickshaw:</b> ₹10–30 (temples ke aas paas)\n🚌 <b>City Bus:</b> ₹5–15 (Bhopal, Indore mein)\n🏍️ <b>Bike Rental:</b> ₹400–600/day (Pachmarhi mein popular)\n🚗 <b>Car Rental:</b> ₹1500–2500/day with driver\n\n💡 Tip: Khajuraho, Orchha mein cycling bhi kar sakte ho!\nSaare jagah pe app-based cabs milti hain."},
+      // SHOPPING
+      {k:["shopping","kharidna","kharidari","souvenir","gift","bazaar","market","haat","handicraft","buy"],
+       a:"🛍️ <b>MP mein Kya Khariden:</b>\n\n🎨 <b>Chanderi Silk</b> — sarees, Chanderi (Ashok Nagar)\n🧵 <b>Maheshwari Saree</b> — Maheshwar (Khargone)\n🪆 <b>Gond Art</b> — tribal paintings\n🏺 <b>Pottery & Terracotta</b> — Jabalpur\n🪵 <b>Sandalwood items</b> — temple markets\n💎 <b>Panna Diamonds</b> — famous!\n🧿 <b>Bagh Print</b> — block print fabric\n\n📍 <b>Best Bazaars:</b>\n• Indore — Sarafa, Cloth Market\n• Bhopal — Chowk Bazaar, New Market\n• Khajuraho — Main Market\n• Gwalior — Sarafa Bazaar"},
+      // FESTIVALS
+      {k:["festival","mela","tyohar","utsav","event","celebration","khajuraho dance","kumbh","simhastha","lokrang"],
+       a:"🎭 <b>MP ke Famous Festivals:</b>\n\n🕺 <b>Khajuraho Dance Festival</b> — Feb/March\n→ Classical dance against temple backdrop — gorgeous!\n\n🙏 <b>Simhastha Kumbh (Ujjain)</b> — Har 12 saal\n→ Crores of pilgrims aate hain\n\n🎵 <b>Tansen Music Festival (Gwalior)</b> — December\n→ Classical music, Tansen ke makbare ke paas\n\n🌸 <b>Lokrang (Bhopal)</b> — January\n→ Folk art & culture festival\n\n🏆 <b>Pachmarhi Utsav</b> — October\n→ Local culture celebration\n\n💡 Festivals ke time advance booking karo!"},
+      // SAFETY
+      {k:["safety","safe","suraksha","secure","crime","danger","woman","female","solo","akele","night"],
+       a:"🛡️ <b>MP Travel Safety Tips:</b>\n\n✅ MP generally safe hai tourists ke liye\n✅ Tourist areas mein police present hoti hai\n✅ MPTDC hotels mein rukna safe hai\n\n👩 <b>Solo Women Travelers:</b>\n• Bhopal, Indore, Gwalior — comparatively safe\n• Raat mein akele avoid karo\n• MPTDC hotels prefer karo\n• Local tour guide lo for forest areas\n\n📞 <b>Emergency Numbers:</b>\n• Police: 100\n• Ambulance: 108\n• Tourist Helpline: 1800-233-1800\n• MP Tourism: 0755-2774340\n\n💡 Tip: Registered cab use karo, MPTDC tours best!"},
+      // PHOTOGRAPHY
+      {k:["photo","photography","instagram","click","camera","selfie","spots","sunset","sunrise","beautiful"],
+       a:"📸 <b>MP ke Best Photography Spots:</b>\n\n🌅 <b>Sunrise/Sunset:</b>\n• Dhoopgarh (Pachmarhi) — MP ka highest point\n• Omkareshwar — Narmada pe sunset\n• Mandu — misty sunrise in monsoon\n\n🏛️ <b>Architecture:</b>\n• Khajuraho temples — golden hour mein\n• Orchha chhatriyan — Betwa river ke saath\n• Gwalior Fort — evening light show\n\n🐯 <b>Wildlife:</b>\n• Bandhavgarh — tiger shots\n• Kanha — barasingha deer meadows\n\n🌊 <b>Nature:</b>\n• Bhedaghat (Jabalpur) — marble rocks\n• Bee Falls Pachmarhi\n• Pench jungle trails\n\n💡 Tip: Early morning (6–8 AM) best light hoti hai!"},
+      // ECO TOURISM
+      {k:["eco","nature","trekking","trek","camping","adventure","outdoor","green","forest","jungle","environment"],
+       a:"🌿 <b>MP Eco Tourism:</b>\n\n🏕️ <b>Camping:</b>\n• Pachmarhi — jungle camping\n• Pench — eco camps\n• Satpura — river camps\n\n🥾 <b>Trekking:</b>\n• Pachmarhi trails — Mahadeo Hills\n• Amarkantak — Narmada origin\n• Panna — gorge trekking\n\n🚣 <b>Water Activities:</b>\n• Bhedaghat — boat ride on Narmada\n• Omkareshwar — river boating\n• Hanuwantia Island — water sports!\n\n🦜 <b>Bird Watching:</b>\n• Kanha, Pench, Satpura\n• 300+ bird species in MP\n\n💡 MPTDC eco packages available — ₹2000–5000/person"},
+      // ADVENTURE SPORTS
+      {k:["adventure","sports","zip line","rappelling","rock climbing","kayaking","rafting","cycling","horse riding"],
+       a:"🤿 <b>Adventure Sports in MP:</b>\n\n🧗 <b>Rock Climbing & Rappelling:</b>\n• Pachmarhi — best location\n• Panna — gorge rappelling\n\n🚴 <b>Cycling:</b>\n• Orchha — heritage cycle tour\n• Khajuraho — cycle temple tour\n• Bhopal — Lake cycling path\n\n🚣 <b>Water Sports:</b>\n• Hanuwantia (Khandwa) — jet ski, boating, parasailing\n• Omkareshwar — river activities\n\n🏹 <b>Other:</b>\n• Hot air balloon — Bhopal (seasonal)\n• Jeep safari — all tiger reserves\n• Elephant rides — kuch reserves mein\n\n💡 Pachmarhi Adventurer's Club contact: available at tourist office"},
+      // SANCHI
+      {k:["sanchi","stupa","buddha","buddhist","ashoka","pillar"],
+       a:"⛪ <b>Sanchi Stupa:</b>\n\nSamrat Ashoka ne 3rd century BC mein banwaya!\n\n🏛️ Great Stupa — UNESCO World Heritage\n🗿 4 ornate Toranas (gateways)\n🏛️ Archaeological Museum on-site\n🔔 Multiple stupas & pillars\n\n🎟️ Entry: ₹40 (Indians) | ₹600 (Foreigners)\n📍 Bhopal se sirf <b>46 km!</b>\n🚆 Sanchi Railway Station bhi hai\n⏰ Open: Sunrise to Sunset\n\n💡 Bhopal se half-day trip easily ho sakta hai!"},
+      // BHOPAL
+      {k:["bhopal","capital","lake","talab","museum","tribal","taj ul masjid"],
+       a:"🌆 <b>Bhopal — City of Lakes:</b>\n\n🌊 Upper Lake (Bada Talab) — India ki badi man-made lake\n🏛️ <b>Tribal Museum</b> — India ka best! (Free entry)\n🕌 Taj-ul-Masajid — India ki badi masjid\n🌿 Van Vihar National Park — city mein jungle!\n🎨 State Museum, Bharat Bhavan\n🛕 Birla Mandir — hilltop\n🍽️ Chowk Bazaar — street food\n\n✈️ Raja Bhoj Airport | 🚆 Bhopal Junction\n\n📍 Distances:\nSanchi 46km | Pachmarhi 210km | Ujjain 183km"},
+      // GWALIOR
+      {k:["gwalior","fort","scindia","tansen","jai vilas","man mandir"],
+       a:"⚔️ <b>Gwalior:</b>\n\n🏯 <b>Gwalior Fort</b> — 300 feet oonchi chatan par!\n→ Man Mandir Palace\n→ Sas Bahu Temple\n→ Teli ka Mandir\n→ Light & Sound show (raat 7:30 baje)\n\n🏛️ <b>Jai Vilas Palace</b> — Scindia family ka mahal\n→ Museum mein gold ka saman!\n\n🎵 <b>Tansen Sangeet Samaroh</b> — December festival\n🎟️ Fort entry: ₹75 (Indians)\n📍 Delhi se 321km | Bhopal se 423km"},
+      // INDORE
+      {k:["indore","sarafa","rajwada","lalbagh","street food","cleanest"],
+       a:"🏙️ <b>Indore — India ka Sabse Saaf Shehar:</b>\n\n🍽️ <b>Sarafa Bazaar</b> — India ka #1 night street food!\n→ Raat 9 baje se subah 2 baje tak\n→ Poha, jalebi, garadu, bhutte ka kees, malpua, dahi wada\n\n🏯 Rajwada Palace — 200 saal purana\n🌿 Lal Bagh Palace — European architecture\n🛕 Kanch Mandir — glass temple\n💧 Patalpani Waterfall — 300 feet!\n\n🏆 7 saal se #1 Cleanest City of India!\n✈️ Airport | 🚆 Indore Railway Station\n📍 Bhopal se 190km"},
+      // JABALPUR
+      {k:["jabalpur","marble","bhedaghat","dhuandhar","narmada","marble rocks"],
+       a:"💧 <b>Jabalpur — Marble Rocks:</b>\n\n🌊 <b>Bhedaghat</b> — Narmada ke kinare 100ft oonchi marble cliffs!\n→ Boat ride: ₹100–150 (must do!)\n→ Chandra ki raat mein bahut sundar lagta hai\n\n💨 <b>Dhuandhar Falls</b> — paani aise girta hai jaise dhua\n🛕 Chausath Yogini Temple — 10th century\n\n🚆 Jabalpur Junction — major station\n📍 Bhopal se 330km | Nagpur se 280km\n🕐 Best: October–March\n💡 Full moon raat ko boat ride — magical!"},
+      // MANDU
+      {k:["mandu","mandav","rupmati","baz bahadur","jahaz mahal","monsoon"],
+       a:"🏯 <b>Mandu — City of Joy:</b>\n\nBaz Bahadur & Rupmati ki legendary prem kahani!\n\n🚢 <b>Jahaz Mahal</b> — ship-shaped palace, amazing!\n💑 <b>Rupmati Pavilion</b> — stunning valley view\n🎵 Baz Bahadur Palace\n🌊 Rewa Kund\n🕌 Jama Masjid\n\n🌧️ <b>Monsoon mein BAHUT sundar lagta hai!</b>\n🎟️ Entry: ₹250\n📍 Indore se 100km | Bhopal se 290km\n💡 History lovers & photographers ke liye paradise!"},
+      // OMKARESHWAR
+      {k:["omkareshwar","jyotirlinga","narmada","island","shiv"],
+       a:"🛕 <b>Omkareshwar — Jyotirlinga:</b>\n\n12 Jyotirlingon mein se ek — Om shape mein island!\n\n🙏 Omkareshwar Temple — Narmada ke beech\n🌉 Suspension bridge crossing\n🚤 Boat ride — temple darshan\n🛕 Mamleshwar Temple (dono milke ek Jyotirlinga)\n🌄 Gauri Somnath Temple\n\n📍 Indore se 78km | Khandwa se 70km\n⏰ Aarti: Subah 5 baje & Shaam 8 baje\n💡 Sawan mein bahut rush hota hai — weekday prefer karo"},
+      // LANGUAGE & CULTURE
+      {k:["language","boli","culture","log","people","customs","tradition","etiquette","bolna","hindi"],
+       a:"🎭 <b>MP ki Culture & Language:</b>\n\n🗣️ <b>Language:</b> Hindi main language\n→ Bundeli, Malwi, Baghelkhandi — local dialects\n→ English tourist areas mein samajh aata hai\n\n🙏 <b>Customs:</b>\n→ Temples mein joote bahar utaaro\n→ Bhojan se pehle haath dhone ki parampara\n→ Bade logon ko 'Ji' bulao\n\n👘 <b>Local Dress:</b>\n→ Chanderi & Maheshwari sarees famous\n→ Gond tribal jewelry\n\n🎵 <b>Music & Dance:</b>\n→ Rai dance (Bundelkhand)\n→ Karma, Saila tribal dances\n→ Classical — Tansen legacy"},
+      // RELIGION / PILGRIMAGE
+      {k:["pilgrimage","tirth","religious","dhaam","temple","mandir","pooja","darshan","spiritual"],
+       a:"🛕 <b>MP ke Famous Tirth Sthan:</b>\n\n🙏 <b>Ujjain</b> — Mahakaleshwar Jyotirlinga\n🙏 <b>Omkareshwar</b> — Jyotirlinga\n⛪ <b>Sanchi</b> — Buddhist pilgrimage\n🕌 <b>Bhopal</b> — Taj-ul-Masajid\n🛕 <b>Amarkantak</b> — Narmada udgam sthal\n🛕 <b>Chitrakoot</b> — Ram ka vanvas sthal\n🛕 <b>Orchha</b> — Ram Raja Temple (unique!)\n🛕 <b>Maihar</b> — Sharda Mata Mandir\n🛕 <b>Mandla</b> — Narmada ghats\n\n💡 MP mein 12 main pilgrimage circuits hain!\nMPTDC pilgrimage tours available."},
+      // NARMADA
+      {k:["narmada","river","ghat","amarkantak","holy","parikrama"],
+       a:"🌊 <b>Narmada — MP ki Sacred River:</b>\n\nIndia ki 5th largest river — Madhya Pradesh se nikaali!\n\n📍 <b>Amarkantak</b> — Narmada ka udgam sthal\n→ Maikala Hills mein, bahut peaceful\n\n📍 <b>Maheshwar</b> — Ghat & Ahilya Bai ki nagri\n📍 <b>Omkareshwar</b> — beautiful island\n📍 <b>Bhedaghat</b> — Marble Rocks\n📍 <b>Hoshangabad</b> — Sethan Ghat\n\n🙏 <b>Narmada Parikrama</b> — 3 saal ki padyatra\n1312km ki holy circumambulation\n\n💡 Narmada ke kinarey sunset — must watch!"},
+      // FAMILY TRIP
+      {k:["family","bachche","children","kids","family trip","parents","maa baap","ghar wale"],
+       a:"👨‍👩‍👧‍👦 <b>MP Family Trip ke liye Best:</b>\n\n🌿 <b>Pachmarhi</b> — cool weather, waterfalls, safe\n🐯 <b>Kanha/Bandhavgarh</b> — jungle jeep safari\n⛪ <b>Sanchi</b> — history + picnic spot\n🌆 <b>Bhopal</b> — museum, lakes, Van Vihar\n🏰 <b>Orchha</b> — fort + river + temples\n🛕 <b>Ujjain</b> — spiritual experience\n\n💡 Tips for families:\n• MPTDC family packages best value\n• Bhopal Van Vihar — kids love it!\n• Pachmarhi train + bus comfortable\n• Avoid summer — kids ke liye bahut garmi"},
+      // HONEYMOON
+      {k:["honeymoon","couple","romantic","naya shaadi","newly married","romance","love"],
+       a:"💑 <b>MP Honeymoon Destinations:</b>\n\n🌅 <b>Pachmarhi</b> — misty hills, waterfalls, cozy\n🏯 <b>Orchha</b> — riverside palaces, very romantic\n🏯 <b>Mandu</b> — Baz Bahadur & Rupmati ki love story\n🛕 <b>Maheshwar</b> — peaceful Narmada ghats\n🌿 <b>Amarkantak</b> — serene forest getaway\n\n🏨 <b>Romantic Stays:</b>\n• Usha Kiran Palace Gwalior\n• Noor-Us-Sabah Bhopal\n• Lalit Temple View Khajuraho\n• MPTDC Bungalows Pachmarhi\n\n💡 October–February best season for honeymoon!"},
+      // SOLO TRIP
+      {k:["solo","akele","alone","single","solo trip","backpacker","budget traveler"],
+       a:"🎒 <b>MP Solo Travel Guide:</b>\n\n✅ <b>Best Cities for Solo:</b>\n• Bhopal — safe, well-connected\n• Indore — vibrant, hostel culture\n• Gwalior — compact, easy to explore\n• Khajuraho — tourist-friendly\n\n💰 <b>Budget Tips:</b>\n• Hostels: ₹300–600/night\n• Dhabas: ₹50–100/meal\n• Local buses: ₹10–30\n• Cycle rent: ₹100–200/day\n\n🛡️ <b>Safety:</b>\n• Registered autos/cabs use karo\n• Tourist Police helpline: 1800-233-1800\n• MPTDC properties prefer karo\n\n💡 Couchsurfing community bhi hai Bhopal mein!"},
+      // WATERFALLS
+      {k:["waterfall","jharna","falls","paani","cascade","chachai","keoti","bee falls","dhuandhar"],
+       a:"💧 <b>MP ke Famous Waterfalls:</b>\n\n🌊 <b>Bee Falls</b> (Pachmarhi) — most popular\n🌊 <b>Dhuandhar Falls</b> (Jabalpur) — dramatic!\n🌊 <b>Chachai Falls</b> (Rewa) — India's highest (130m)\n🌊 <b>Keoti Falls</b> (Rewa) — 98m\n🌊 <b>Kapildhara</b> (Amarkantak)\n🌊 <b>Patalpani</b> (Indore) — 300 feet\n🌊 <b>Pandav Falls</b> (Panna)\n🌊 <b>Apsara Vihar</b> (Pachmarhi)\n\n🕐 Best: July–October (Monsoon ke baad)\n⚠️ Monsoon mein slippery, careful rahein!"},
+    ];
+
+    function find(txt){
+      var t=txt.toLowerCase();
+      for(var i=0;i<kb.length;i++)
+        for(var j=0;j<kb[i].k.length;j++)
+          if(t.indexOf(kb[i].k[j])!==-1) return kb[i].a.replace(/\n/g,'<br>');
+      var def=[
+        "Hmm, is baare mein detail nahi hai 😅<br><br>Koshish karo ye poochho:<br>🏛️ Places • 🍽️ Food • 💰 Budget • 🏨 Hotels • 🚆 Routes • 🎭 Festivals • 🛡️ Safety • 📸 Photo spots<br><br>Ya MP Tourism: <a href='https://www.mptourism.com' target='_blank' style='color:#0891b2;'>mptourism.com</a>",
+        "Is topic pe meri knowledge limited hai! 😊<br><br>MP ke baare mein ye sawaal poochh sakte ho:<br>🐯 Tiger safari • 🏰 Fort history • 💑 Honeymoon spots • 👨‍👩‍👧 Family trip • 🎒 Solo travel • 💧 Waterfalls • 🛕 Pilgrimage"
+      ];
+      return def[Math.floor(Math.random()*def.length)];
+    }
+    function ts(){return new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});}
+    function addMsg(html,role){
+      var box=document.getElementById('mp-msgs'),isBot=role==='bot';
+      var wrap=document.createElement('div');
+      wrap.style.cssText='display:flex;align-items:flex-end;gap:10px;'+(isBot?'':'flex-direction:row-reverse;');
+      var av=document.createElement('div');
+      av.style.cssText='width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;background:'+(isBot?'#0891b2':'#164e63')+';';
+      av.innerHTML=isBot?'🗺️':'👤';
+      var inner=document.createElement('div');inner.style.maxWidth='82%';
+      var bub=document.createElement('div');
+      bub.style.cssText=isBot
+        ?'background:#fff;border:1px solid #e0f2fe;padding:12px 16px;border-radius:16px;border-bottom-left-radius:4px;font-size:14px;line-height:1.65;color:#1e3a4a;'
+        :'background:linear-gradient(135deg,#0891b2,#0e7490);padding:12px 16px;border-radius:16px;border-bottom-right-radius:4px;font-size:14px;line-height:1.65;color:#fff;';
+      bub.innerHTML=html;
+      var t=document.createElement('div');
+      t.style.cssText='font-size:11px;color:#94a3b8;margin-top:5px;text-align:'+(isBot?'left':'right')+';';
+      t.textContent=ts()+(isBot?' · MP Expert':'');
+      inner.appendChild(bub);inner.appendChild(t);
+      wrap.appendChild(av);wrap.appendChild(inner);
+      box.appendChild(wrap);box.scrollTop=box.scrollHeight;
+    }
+    function showTyping(){
+      var box=document.getElementById('mp-msgs');
+      var el=document.createElement('div');el.id='mp-typing';el.style.cssText='display:flex;align-items:flex-end;gap:10px;';
+      el.innerHTML='<div style="width:32px;height:32px;border-radius:50%;background:#0891b2;display:flex;align-items:center;justify-content:center;font-size:14px;">🗺️</div>'+
+        '<div style="background:#fff;border:1px solid #e0f2fe;padding:12px 16px;border-radius:16px;border-bottom-left-radius:4px;">'+
+        '<span style="display:inline-flex;gap:5px;align-items:center;">'+
+        '<span style="width:7px;height:7px;border-radius:50%;background:#0891b2;display:inline-block;animation:mpd 1.2s infinite;"></span>'+
+        '<span style="width:7px;height:7px;border-radius:50%;background:#0891b2;display:inline-block;animation:mpd 1.2s 0.2s infinite;"></span>'+
+        '<span style="width:7px;height:7px;border-radius:50%;background:#0891b2;display:inline-block;animation:mpd 1.2s 0.4s infinite;"></span>'+
+        '</span></div>';
+      box.appendChild(el);box.scrollTop=box.scrollHeight;
+    }
+    function removeTyping(){var t=document.getElementById('mp-typing');if(t)t.remove();}
+    window.mpChip=function(btn){
+      document.getElementById('mp-input').value=btn.textContent.replace(/^[^\s]+\s/,'');
+      window.mpSend();
+    };
+    window.mpSend=function(){
+      var inp=document.getElementById('mp-input'),txt=inp.value.trim();
+      if(!txt)return;
+      addMsg(txt,'user');inp.value='';showTyping();
+      setTimeout(function(){removeTyping();addMsg(find(txt),'bot');},700+Math.random()*400);
+    };
+    var s=document.createElement('style');
+    s.textContent='@keyframes mpd{0%,60%,100%{transform:translateY(0);opacity:0.35}30%{transform:translateY(-6px);opacity:1}}';
+    document.head.appendChild(s);
+  })();
+  </script>
+  <!-- Call to Action Section -->
+  <section class="bg-green-700 text-white py-16 rounded-t-3xl shadow-inner">
+   <div class="container mx-auto px-6 md:px-0 max-w-4xl text-center">
+    <h2 class="text-4xl font-extrabold mb-6">
+     Ready to Explore Madhya Pradesh?
+    </h2>
+    <p class="text-lg mb-10 max-w-3xl mx-auto">
+     Plan your trip today and experience the heart of Incredible India like never before.
+    </p>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8 mt-16">
+   <div class="container mx-auto px-6 md:px-0 flex flex-col md:flex-row justify-between items-center text-sm">
+    <p>
+     © 2025 Explore Madhya Pradesh. All rights reserved.
+    </p>
+    <p>
+     Made with
+     <i class="fas fa-heart text-red-500 mx-1">
+     </i>
+     by Ajay Songara , Geetanshi Tiwari , Nikita Chouhan , Mohit Malviya
+    </p>
+    <div class="flex space-x-6 mt-4 md:mt-0">
+     <a aria-label="Instagram" class="hover:text-white transition" href="https://www.instagram.com/itz____ajju_____1/">
+      <i class="fab fa-instagram text-lg">
+      </i>
+     </a>
+     <a aria-label="LinkedIn" class="hover:text-white transition" href="https://www.linkedin.com/in/ajay-songara-296063341/">
+      <i class="fab fa-linkedin-in text-lg">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>

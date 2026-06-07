@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Your Visit to Ujjain</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9fafb;
+    }
+    header {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/9/99/Mahakaleshwar_Temple%2C_Ujjain.jpg') center/cover no-repeat;
+    }
+    .place-card:hover {
+      transform: translateY(-5px);
+      transition: all 0.3s ease;
+    }
+    div a{
+      color: white;
+      margin-left: 10px;
+      gap: 0%;
+    }
+  </style>
+</head>
+
+<body class="text-gray-800">
+  <!-- Hero Section -->
+  <header class="text-center text-white py-20 bg-gradient-to-b from-black/60 to-black/40">
+     <div class="mt-4 md:mt-0 flex flex-wrap justify-center gap-6 text-gray-700 font-semibold text-lg">
+     <a class="hover:text-green-700 transition" href="home">
+      Home
+     </a>
+     <a class="hover:text-green-700 transition" href="about">
+      about
+     </a>
+     <a class="hover:text-green-700 transition" href="locations">
+      locations
+     </a>
+     <a class="hover:text-green-700 transition" href="contact">
+      Contact
+     </a>
+     <a class="hover:text-green-700 transition" href="login">
+      Login
+     </a>
+    </div>
+    <h1 class="text-4xl md:text-5xl font-bold drop-shadow-lg">Visit the Holy City of Ujjain</h1>
+    <p class="text-lg mt-3">Book your spiritual journey to Mahakaleshwar and beyond 🌸</p>
+  </header>
+
+  <!-- Famous Places Section -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-3xl font-semibold text-center mb-8">Famous Places to Visit in Ujjain</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Mahakaleshwar Temple -->
+      <div class="place-card bg-white rounded-xl shadow-md overflow-hidden">
+        <img src="https://th.bing.com/th/id/OIP.xho-lhO9uplGwcsqLNQqAwHaFj?w=216&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Mahakaleshwar Temple" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Mahakaleshwar Temple</h3>
+          <p class="text-sm text-gray-600 mt-1">Distance: 0 km (City Center) | Visit Time: 6:00 AM – 12:00 PM, 4:00 PM – 9:00 PM</p>
+          <p class="text-sm mt-2">One of the 12 Jyotirlingas of Lord Shiva — the spiritual heart of Ujjain.</p>
+        </div>
+      </div>
+
+      <!-- Ram Ghat -->
+      <div class="place-card bg-white rounded-xl shadow-md overflow-hidden">
+        <img src="https://th.bing.com/th/id/OIP.Hle9OT9CHImJeZ-lk6FHFwHaD6?w=307&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Ram Ghat" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Ram Ghat</h3>
+          <p class="text-sm text-gray-600 mt-1">Distance: 1 km | Visit Time: 5:00 AM – 8:00 PM</p>
+          <p class="text-sm mt-2">Sacred bathing site on the Shipra River — famous for Kumbh Mela and evening aarti.</p>
+        </div>
+      </div>
+
+      <!-- Kal Bhairav Temple -->
+      <div class="place-card bg-white rounded-xl shadow-md overflow-hidden">
+        <img src="https://th.bing.com/th/id/OIP.ePTkaR8vm13tILvzAiEEqgHaE2?w=284&h=186&c=7&r=0&o=7&pid=1.7&rm=3" alt="Kal Bhairav Temple" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Kal Bhairav Temple</h3>
+          <p class="text-sm text-gray-600 mt-1">Distance: 7 km | Visit Time: 6:00 AM – 9:00 PM</p>
+          <p class="text-sm mt-2">Dedicated to Lord Bhairav — known for unique liquor offerings to the deity.</p>
+        </div>
+      </div>
+
+      <!-- Sandipani Ashram -->
+      <div class="place-card bg-white rounded-xl shadow-md overflow-hidden">
+        <img src="https://www.trawell.in/admin/images/upload/89416026Ujjain_Sandipani_Ashram_Main.jpg" alt="Sandipani Ashram" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Sandipani Ashram</h3>
+          <p class="text-sm text-gray-600 mt-1">Distance: 3 km | Visit Time: 8:00 AM – 6:00 PM</p>
+          <p class="text-sm mt-2">Where Lord Krishna, Balarama, and Sudama studied under Guru Sandipani.</p>
+        </div>
+      </div>
+
+      <!-- Harsiddhi Temple -->
+      <div class="place-card bg-white rounded-xl shadow-md overflow-hidden">
+        <img src="https://reservation.shreeganga.in/wp-content/uploads/2023/01/harsiddhi-mata-temple.jpg" alt="Harsiddhi Temple" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Harsiddhi Temple</h3>
+          <p class="text-sm text-gray-600 mt-1">Distance: 1 km | Visit Time: 6:00 AM – 10:00 PM</p>
+          <p class="text-sm mt-2">A Shakti Peetha — famous for its twin lamp pillars lit during Navratri.</p>
+        </div>
+      </div>
+
+      <!-- Bhartrihari Caves -->
+      <div class="place-card bg-white rounded-xl shadow-md overflow-hidden">
+        <img src="https://optimatravels.com/images/madhya-pradesh-images/bhartrihari-caves-ujjain.jpeg" alt="Bhartrihari Caves" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-bold">Bhartrihari Caves</h3>
+          <p class="text-sm text-gray-600 mt-1">Distance: 4 km | Visit Time: 7:00 AM – 7:00 PM</p>
+          <p class="text-sm mt-2">Ancient meditation caves believed to be where poet-saint Bhartrihari lived.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section class="bg-gradient-to-br from-blue-50 to-indigo-50 py-12">
+    <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8">
+      <h2 class="text-3xl font-semibold text-center mb-6 text-indigo-700">Book Your Ujjain Visit</h2>
+
+      <form id="ujjainForm" class="space-y-6">
+        <!-- Trip Details -->
+        <div class="grid sm:grid-cols-2 gap-4">
+          <label class="block text-sm">
+            Origin
+            <input required name="origin" type="text" placeholder="Enter your city" class="mt-1 w-full border rounded-md p-2" />
+          </label>
+          <label class="block text-sm">
+            Travel Date
+            <input required name="date" type="date" class="mt-1 w-full border rounded-md p-2" />
+          </label>
+        </div>
+
+        <!-- Pickup Point -->
+        <label class="block text-sm">
+          Pickup Point in Ujjain
+          <select name="pickup" class="mt-1 w-full border rounded-md p-2" required>
+            <option value="">-- Select Pickup Point --</option>
+            <option value="railway-station">Ujjain Junction Railway Station</option>
+            <option value="bus-stand">Ujjain Bus Stand (Dewas Gate)</option>
+            <option value="mahakaleshwar">Near Mahakaleshwar Temple</option>
+            <option value="freeganj">Freeganj Tower Area</option>
+            <option value="nanakheda">Nanakheda Bus Terminal</option>
+          </select>
+        </label>
+
+        <label class="block text-sm">
+          Select Package
+          <select name="package" class="mt-1 w-full border rounded-md p-2">
+            <option value="basic">Basic Darshan Package — ₹2,000</option>
+            <option value="premium">Premium Temple Tour — ₹3,500</option>
+            <option value="deluxe">Deluxe 2-Day Stay & Tour — ₹6,000</option>
+          </select>
+        </label>
+
+        <!-- Travelers -->
+        <div>
+          <h3 class="text-lg font-medium mb-2 border-b pb-1">Travelers</h3>
+          <div id="travelersContainer" class="space-y-4"></div>
+          <div class="flex justify-between mt-3">
+            <button id="addTravelerBtn" type="button" class="px-4 py-2 bg-indigo-600 text-white rounded-md">+ Add Traveler</button>
+            <button id="clearTravelersBtn" type="button" class="px-4 py-2 border rounded-md">Clear</button>
+          </div>
+          <p id="travelerCount" class="text-sm text-gray-500 mt-2">0 travelers</p>
+        </div>
+
+        <!-- Summary -->
+        <div class="bg-gray-50 p-4 rounded-md">
+          <h3 class="text-lg font-semibold mb-2">Booking Summary</h3>
+          <p><strong>Pickup Point:</strong> <span id="summaryPickup">—</span></p>
+          <p><strong>Package:</strong> <span id="summaryPackage">Basic</span></p>
+          <p><strong>Travelers:</strong> <span id="summaryTravelers">0</span></p>
+          <p><strong>Total Cost:</strong> ₹<span id="summaryTotal">0</span></p>
+        </div>
+
+        <button type="submit" class="w-full bg-green-600 text-white py-2 rounded-md hover:bg-green-700 transition">Book Now</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="text-center text-sm text-gray-500 py-6">
+    © 2025 Ujjain Visit Planner — Experience the Divine Vibes ✨
+  </footer>
+
+  <!-- Traveler Template -->
+  <template id="travelerTemplate">
+    <div class="traveler grid sm:grid-cols-3 gap-3 items-start border p-3 rounded-md bg-white shadow-sm">
+      <label class="text-xs sm:col-span-1">
+        Full Name
+        <input required name="name" type="text" placeholder="Traveler name" class="mt-1 w-full border rounded-md p-2" />
+      </label>
+      <label class="text-xs">
+        Age
+        <input required name="age" type="number" min="1" max="120" class="mt-1 w-full border rounded-md p-2" />
+      </label>
+      <label class="text-xs">
+        Type
+        <select name="type" class="mt-1 w-full border rounded-md p-2">
+          <option value="adult">Adult</option>
+          <option value="child">Child</option>
+          <option value="infant">Infant</option>
+        </select>
+      </label>
+      <div class="sm:col-span-3 flex justify-end">
+        <button type="button" class="removeBtn text-red-600 text-xs hover:underline">Remove</button>
+      </div>
+    </div>
+  </template>
+
+  <!-- JavaScript -->
+  <script>
+  (function(){
+    const container = document.getElementById("travelersContainer");
+    const tpl = document.getElementById("travelerTemplate").content;
+    const addBtn = document.getElementById("addTravelerBtn");
+    const clearBtn = document.getElementById("clearTravelersBtn");
+    const travelerCount = document.getElementById("travelerCount");
+    const packageSelect = document.querySelector("select[name='package']");
+    const pickupSelect = document.querySelector("select[name='pickup']");
+    const summaryPackage = document.getElementById("summaryPackage");
+    const summaryPickup = document.getElementById("summaryPickup");
+    const summaryTravelers = document.getElementById("summaryTravelers");
+    const summaryTotal = document.getElementById("summaryTotal");
+    const form = document.getElementById("ujjainForm");
+
+    function updateSummary(){
+      const travelers = container.querySelectorAll(".traveler").length;
+      travelerCount.textContent = travelers + (travelers === 1 ? " traveler" : " travelers");
+      summaryTravelers.textContent = travelers;
+      summaryPackage.textContent = packageSelect.selectedOptions[0].text.split("—")[0].trim();
+      summaryPickup.textContent = pickupSelect.selectedOptions[0].text;
+      const pkgPrice = Number(packageSelect.selectedOptions[0].text.match(/₹([\d,]+)/)[1].replace(/,/g, ""));
+      const total = travelers * pkgPrice;
+      summaryTotal.textContent = total.toLocaleString();
+    }
+
+    function addTraveler(){
+      const node = document.importNode(tpl, true);
+      node.querySelector(".removeBtn").addEventListener("click", e=>{
+        e.target.closest(".traveler").remove();
+        updateSummary();
+      });
+      node.addEventListener("input", updateSummary);
+      container.appendChild(node);
+      updateSummary();
+    }
+
+    addBtn.addEventListener("click", addTraveler);
+    clearBtn.addEventListener("click", ()=>{
+      container.innerHTML = "";
+      updateSummary();
+    });
+    packageSelect.addEventListener("change", updateSummary);
+    pickupSelect.addEventListener("change", updateSummary);
+
+    form.addEventListener("submit", e=>{
+      e.preventDefault();
+      if(container.children.length === 0){
+        alert("Please add at least one traveler.");
+        return;
+      }
+      alert("🎉 Your Ujjain visit has been booked successfully! 🙏");
+      form.reset();
+      container.innerHTML = "";
+      updateSummary();
+    });
+
+    addTraveler();
+  })();
+  </script>
+</body>
+</html>
